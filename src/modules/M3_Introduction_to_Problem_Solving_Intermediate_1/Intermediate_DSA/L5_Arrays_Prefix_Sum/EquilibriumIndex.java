@@ -59,13 +59,13 @@ public class EquilibriumIndex {
         System.out.println(
                 """
                         Q. Equilibrium Index
-                         Given N array elements, count no of equilibrium index.
-                         An index i is said to be equilibrium index if:
-                         Sum of all elements left of i index = Sum of all elements right of i index
-                         Sum[0, i-1] = Sum[i+1, N-1]
-                         Note:
-                         • if i == 0, leftSum = 0
-                         • If i == N-1, rightSum = 0""");
+                        Given N array elements, count no of equilibrium index.
+                        An index i is said to be equilibrium index if:
+                        Sum of all elements left of i index = Sum of all elements right of i index
+                        Sum[0, i-1] = Sum[i+1, N-1]
+                        Note:
+                        • if i == 0, leftSum = 0
+                        • If i == N-1, rightSum = 0""");
         System.out.println("------------------------------------------");
 
         int[] arr1 = new int[] { -3, 2, 4, -1 };
