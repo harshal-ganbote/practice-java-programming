@@ -33,7 +33,7 @@ public class SumInRange {
         int[] preSum = PrefixSum.constructPrefixSum(A);
 
         for (int index = 0; index < N; index++) {
-            int leftIndex = Q[index][0];
+            int leftIndex = Q[index][0]; 
             int rightIndex = Q[index][1];
             int sum;
 
