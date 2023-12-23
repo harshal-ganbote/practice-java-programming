@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.L12_Maths_Modular_Arthimetic_Introduction;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L12_Maths_Modular_Arthimetic_Introduction;
 
 import java.util.Arrays;
 
