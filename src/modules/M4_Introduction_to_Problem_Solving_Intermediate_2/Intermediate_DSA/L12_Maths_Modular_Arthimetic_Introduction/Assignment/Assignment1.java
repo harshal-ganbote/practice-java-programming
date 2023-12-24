@@ -2,14 +2,16 @@ package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_D
 
 public class Assignment1 {
 
-  // Problem Description
-  // You are given A, B and C .
-  // Calculate the value of (A ^ B) % C
+  /*
+   * Problem Description
+   * You are given A, B and C .
+   * Calculate the value of (A ^ B) % C
 
-  // Problem Constraints
-  // 1 <= A <= 10^9
-  // 0 <= B <= 10^5
-  // 1 <= C <= 10^9
+    * Problem Constraints
+    ? 1 <= A <= 10^9
+    ? 0 <= B <= 10^5
+    ? 1 <= C <= 10^9 
+  */
   static int solve(int A, int B, int C) {
     long ans = 1;
 

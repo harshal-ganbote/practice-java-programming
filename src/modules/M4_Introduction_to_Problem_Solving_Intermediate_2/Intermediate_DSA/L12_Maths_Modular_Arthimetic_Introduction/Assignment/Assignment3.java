@@ -10,7 +10,7 @@ public class Assignment3 {
   // 1 <= N <= 10^5
   // 0 <= A[i] <= 9
   // A[1] ≠ 0
-  static int solve(int[] A) {
+  static int solve(int[] A) { 
     long sum = 0;
     int N = A.length;
 
