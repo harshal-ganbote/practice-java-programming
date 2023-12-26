@@ -55,9 +55,9 @@ public class EvenNumberInRange {
     int[][] Q = { { 1, 3 }, { 0, 4 }, { 2, 7 } };
     System.out.println(
         """
-            Q. 0-1 Prefix Sum
-            Given N array elements & Q queries containing l & r each. Find no of
-            even numbers in given range.""");
+        Q 0-1 Prefix Sum
+        Given N array elements & Q queries containing l & r each. Find no of
+        even numbers in given range.""");
     System.out.println("------------------------------------------");
     System.out.println("There are following approach Please Select One");
     System.out.println("1 -> Brute force approach");

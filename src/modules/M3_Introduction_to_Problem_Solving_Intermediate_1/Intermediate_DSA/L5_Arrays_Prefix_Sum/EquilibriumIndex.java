@@ -74,8 +74,6 @@ public class EquilibriumIndex {
     System.out.println("Time Complexity -> O(N^2)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
-    System.out.println("Time Complexity -> O(N)");
-    System.out.println("Space Complexity -> O(N)");
     System.out.println("Input Array ->");
     System.out.println(Arrays.toString(arr1));
     System.out.println("Output ->");
@@ -92,6 +90,9 @@ public class EquilibriumIndex {
     System.out.println(countEquilibriumIndexBruteForce(arr3));
     System.out.println("-----------------------------------");
     System.out.println("2 -> Optimized approach");
+    System.out.println("Time Complexity -> O(N)");
+    System.out.println("Space Complexity -> O(N)");
+    System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
     System.out.println(Arrays.toString(arr1));
     System.out.println("Output ->");
