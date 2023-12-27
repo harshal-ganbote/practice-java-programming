@@ -60,8 +60,8 @@ public class MaxConsecutiveOnesSwap {
 
         System.out.println(
         """
-          Given a binary arr[], we can at most swap a single 0 with 1.
-          Find the max consecutive 1's we can get in the arr[].Example 2
+        Q Given a binary arr[], we can at most swap a single 0 with 1.
+        Find the max consecutive 1's we can get in the arr[].Example 2
         """);
     System.out.println("------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
