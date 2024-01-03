@@ -14,6 +14,7 @@ public class CountFactor {
         count++;
       }
     }
+
     return count;
   }
 

@@ -2,11 +2,11 @@ package modules.M5_Advanced_DSA_1.Advanced_DSA.L23_Arrays_2_Two_Dimensional;
 
 import java.util.Arrays;
 
-public class prefixSum2DMatrix {
+public class PrefixSum2DMatrix {
 
-  static int[][] constructPrefixSum2DMatrix(int[][] A) {
+  static long[][] constructPrefixSum2DMatrix(int[][] A) {
     int N = A.length, M = A[0].length;
-    int[][] prefix2DMatrix = new int[N][M];
+    long[][] prefix2DMatrix = new long[N][M];
 
     for (int index = 0; index < N; index++) {
       prefix2DMatrix[index][0] = A[index][0];
@@ -31,9 +31,9 @@ public class prefixSum2DMatrix {
     return prefix2DMatrix;
   }
 
-  static void print2DArray(int[][] A) {
+  static void print2DArray(long[][] A) {
 
-    for (int[] arr : A) {
+    for (long[] arr : A) {
       System.out.println(Arrays.toString(arr));
     }
   }
