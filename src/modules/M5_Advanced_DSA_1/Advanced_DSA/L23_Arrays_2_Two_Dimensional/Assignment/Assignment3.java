@@ -13,7 +13,7 @@ public class Assignment3 {
    * -10^9 <= A[i][j] <= 10^9
    */
   static long solve(int[][] A) {
-    long[][] prefixSum2DMatrix = constructPrefix2DMatrix(A);
+    long[][] prefixSum2DMatrix = constructSuffix2DMatrix(A);
     long ans = Long.MIN_VALUE;
     int N = A.length;
     int M = A[0].length;
@@ -30,27 +30,27 @@ public class Assignment3 {
     return ans;
   }
 
-  static long[][] constructPrefix2DMatrix(int[][] A) {
+  static long[][] constructSuffix2DMatrix(int[][] A) {
     int N = A.length;
     int M = A[0].length;
     long[][] prefixSum2DMatrix = new long[N][M];
 
-    for (int index = 0; index < N; index++) {
-      prefixSum2DMatrix[index][0] = A[index][0];
+    for (int index = N - 1; index >= 0; index--) {
+      prefixSum2DMatrix[index][M - 1] = A[index][M - 1];
 
-      for (int jIndex = 1; jIndex < M; jIndex++) {
+      for (int jIndex = M - 2; jIndex >= 0; jIndex--) {
 
-        prefixSum2DMatrix[index][jIndex] = prefixSum2DMatrix[index][jIndex - 1] + A[index][jIndex];
+        prefixSum2DMatrix[index][jIndex] = prefixSum2DMatrix[index][jIndex + 1] + A[index][jIndex];
 
       }
     }
 
-    for (int jIndex = 0; jIndex < M; jIndex++) {
-      prefixSum2DMatrix[0][jIndex] = prefixSum2DMatrix[0][jIndex];
+    for (int jIndex = M - 1; jIndex >= 0; jIndex--) {
+      prefixSum2DMatrix[N - 1][jIndex] = prefixSum2DMatrix[N - 1][jIndex];
 
-      for (int index = 1; index < N; index++) {
+      for (int index = N - 2; index >= 0; index--) {
 
-        prefixSum2DMatrix[index][jIndex] = prefixSum2DMatrix[index - 1][jIndex] + prefixSum2DMatrix[index][jIndex];
+        prefixSum2DMatrix[index][jIndex] = prefixSum2DMatrix[index + 1][jIndex] + prefixSum2DMatrix[index][jIndex];
 
       }
     }

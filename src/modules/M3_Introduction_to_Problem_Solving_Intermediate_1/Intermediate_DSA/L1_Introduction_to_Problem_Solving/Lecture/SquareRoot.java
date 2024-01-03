@@ -2,6 +2,9 @@ package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_D
 
 public class SquareRoot {
 
+  /*
+   * Q Given a number N, find its square root.
+   */
   static int perfectSquareRoot(int A) {
 
     for (int index = 1; index * index <= A; index++) {

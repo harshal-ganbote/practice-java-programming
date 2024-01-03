@@ -2,6 +2,9 @@ package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_D
 
 public class PrimeNumber {
 
+  /*
+   * Q Prime Check Given N, check if it is a prime number.
+   */
   static int countFactorsOptimized(int A) {
     int count = 0;
 
@@ -34,7 +37,7 @@ public class PrimeNumber {
 
   public static void main(String[] args) {
     System.out.println();
-    System.out.println("Q. Prime Check Given N, check if it is a prime number.");
+    System.out.println("Q Prime Check Given N, check if it is a prime number.");
     System.out.println("--------------------------------------------");
     System.out.println("Time Complexity -> O(Sqrt(N))");
     System.out.println("Space Complexity -> O(1)");

@@ -2,6 +2,9 @@ package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_D
 
 public class CountFactor {
 
+  /*
+   * Q Count of factors Given a number N, count its factors.
+   */
   static int countFactorsBruteForce(int A) {
     int count = 0;
 
@@ -41,7 +44,7 @@ public class CountFactor {
 
   public static void main(String[] args) {
     System.out.println();
-    System.out.println("Q. Count of factors Given a number N, count its factors.");
+    System.out.println("Q Count of factors Given a number N, count its factors.");
     System.out.println("--------------------------------------------");
     System.out.println("There are following approach");
     System.out.println("1 -> Brute force approach");
