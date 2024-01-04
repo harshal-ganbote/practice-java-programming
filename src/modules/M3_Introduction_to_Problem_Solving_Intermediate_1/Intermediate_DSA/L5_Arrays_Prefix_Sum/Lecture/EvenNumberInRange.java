@@ -1,12 +1,14 @@
-package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L5_Arrays_Prefix_Sum;
+package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L5_Arrays_Prefix_Sum.Lecture;
 
 import java.util.Arrays;
 
 public class EvenNumberInRange {
 
-  // Q3 0-1 Prefix Sum
-  // Given N array elements & Q queries containing l & r each. Find no of
-  // even numbers in given range.
+  /*
+   * Q 0-1 Prefix Sum
+   * Given N array elements & Q queries containing l & r each. Find no of
+   * even numbers in given range.
+   */
   static int[] countEvenNumberInRangeBruteForce(int[] A, int[][] Q) {
     int N = Q.length;
     int[] ans = new int[N];
@@ -53,8 +55,9 @@ public class EvenNumberInRange {
   public static void main(String[] args) {
     int[] arr = new int[] { 2, 4, 3, 7, 9, 8, 6, 5, 4, 9 };
     int[][] Q = { { 1, 3 }, { 0, 4 }, { 2, 7 } };
-    System.out.println(
-        """
+
+    System.out.println();
+    System.out.println("""
         Q 0-1 Prefix Sum
         Given N array elements & Q queries containing l & r each. Find no of
         even numbers in given range.""");
@@ -78,5 +81,6 @@ public class EvenNumberInRange {
     System.out.println("Output ->");
     System.out.println(Arrays.toString(countEvenNumberInRangeOptimized(arr, Q)));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

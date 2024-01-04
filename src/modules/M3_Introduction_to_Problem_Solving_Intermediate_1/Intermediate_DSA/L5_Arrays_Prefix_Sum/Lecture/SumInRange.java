@@ -1,12 +1,14 @@
-package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L5_Arrays_Prefix_Sum;
+package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L5_Arrays_Prefix_Sum.Lecture;
 
 import java.util.Arrays;
 
 public class SumInRange {
 
-  // Q1. Given N array elements & Q queries on a same array.For each query
-  // calculate sum of all elements in given range -
-  // [L, R]Note: L & R are indices such that L <= R 51 !<= N, Q !<= 10
+  /*
+   * Q Given N array elements & Q queries on a same array.For each query
+   * calculate sum of all elements in given range -
+   * [L, R]Note: L & R are indices such that L <= R 51 !<= N, Q !<= 10
+   */
   static int[] calculateSumInRangeBruteForce(int[] A, int[][] Q) {
     int N = Q.length;
     int[] ans = new int[N];
@@ -51,10 +53,12 @@ public class SumInRange {
   public static void main(String[] args) {
     int[] arr = new int[] { -3, 6, 2, 4, 5, 2, 8, -9, 3, 1 };
     int[][] Q = { { 1, 3 }, { 0, 4 }, { 2, 7 } };
+
+    System.out.println();
     System.out.println(
         """
-            Q. Given N array elements & Q queries on same array.For each query
-            calculate sum of all elements in given range -\s
+            Q Given N array elements & Q queries on same array.For each query
+            calculate sum of all elements in given range -
             [L, R]Note: L & R are indices such that L <= R 51 !<= N, Q !<= 10""");
     System.out.println("----------------------------------------------------------------");
     System.out.println("Time Complexity -> O(Q*N)");
@@ -73,6 +77,7 @@ public class SumInRange {
     System.out.println("Output ->");
     System.out.println(Arrays.toString(calculateSumInRangeOptimized(arr, Q)));
     System.out.println("----------------------");
+    System.out.println();
 
   }
 }
