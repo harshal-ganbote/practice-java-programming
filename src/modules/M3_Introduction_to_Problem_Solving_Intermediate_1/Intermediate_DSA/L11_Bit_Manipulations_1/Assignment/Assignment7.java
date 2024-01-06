@@ -1,10 +1,12 @@
-package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L10_Bit_Manipulations_1.Assignment;
+package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L11_Bit_Manipulations_1.Assignment;
 
 public class Assignment7 {
 
     // Problem Description
-    // You are given a number A. You are also given a base B. A is a number on base B.
-    // You are required to convert the number A into its corresponding value in decimal number system.
+    // You are given a number A. You are also given a base B. A is a number on base
+    // B.
+    // You are required to convert the number A into its corresponding value in
+    // decimal number system.
 
     // Problem Constraints
     // 0 <= A <= 10^9
@@ -17,7 +19,7 @@ public class Assignment7 {
             int digit = A % 10;
             ans += digit * pow;
             A = A / 10;
-            pow *= B; 
+            pow *= B;
         }
 
         return ans;

@@ -1,4 +1,4 @@
-package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L10_Bit_Manipulations_1.Assignment;
+package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L11_Bit_Manipulations_1.Assignment;
 
 public class Assignment10 {
     // Given an array of integers A, every element appears twice except for one.
@@ -13,8 +13,8 @@ public class Assignment10 {
     // 0 <= A[i] <= INTMAX
     static int singleNumber(final int[] A) {
         int ans = 0;
-        
-        for (int ele: A) {
+
+        for (int ele : A) {
             ans ^= ele;
         }
 
@@ -22,8 +22,8 @@ public class Assignment10 {
     }
 
     public static void main(String[] args) {
-        int[] arr1 = {1, 2, 2, 3, 1};
-        int[] arr2 = {1, 2, 2};
+        int[] arr1 = { 1, 2, 2, 3, 1 };
+        int[] arr2 = { 1, 2, 2 };
 
         System.out.println(singleNumber(arr1));
         System.out.println("----------");

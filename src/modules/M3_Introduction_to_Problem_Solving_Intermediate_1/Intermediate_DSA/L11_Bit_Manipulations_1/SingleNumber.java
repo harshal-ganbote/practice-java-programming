@@ -1,4 +1,4 @@
-package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L10_Bit_Manipulations_1;
+package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L11_Bit_Manipulations_1;
 
 import java.util.Arrays;
 
