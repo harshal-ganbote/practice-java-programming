@@ -45,7 +45,7 @@ public class PrintSubArray {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("---------------------------");
     printSubArray(arr1, sIndex, N - 1);
-    System.out.println("----------------------------------------------------");
+    System.out.println("-------------------------------------------------");
     System.out.println("Q Print all sub arrays of a given array.");
     System.out.println("---------------------------------------");
     System.out.println("Time Complexity -> O(N^3)");

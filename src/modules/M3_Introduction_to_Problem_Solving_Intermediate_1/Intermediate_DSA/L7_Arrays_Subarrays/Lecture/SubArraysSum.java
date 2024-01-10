@@ -1,5 +1,7 @@
 package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L7_Arrays_Subarrays.Lecture;
 
+import java.util.Arrays;
+
 public class SubArraysSum {
 
   /*
@@ -79,13 +81,20 @@ public class SubArraysSum {
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("---------------------------");
+    System.out.println("Input Array ->");
+    System.out.println(Arrays.toString(arr1));
+    System.out.println("Output ->");
     System.out.println(calculateSubArraySumInRange(arr1, sIndex, N - 1));
-    System.out.println("----------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Q. Print sum of every single sub array.");
     System.out.println("---------------------------------------");
     System.out.println("1 -> Brute force approach");
     System.out.println("Time Complexity -> O(N^3)");
     System.out.println("Space Complexity -> O(1)");
+    System.out.println("--------------------------");
+    System.out.println("Input Array ->");
+    System.out.println(Arrays.toString(arr2));
+    System.out.println("Output ->");
     calculateAllSubArraysSum(arr2);
     System.out.println("---------------------------------------");
     System.out.println("2 -> Optimized approach Prefix Sum");
@@ -96,6 +105,10 @@ public class SubArraysSum {
     System.out.println("2 -> Optimized approach Carry Forward");
     System.out.println("Time Complexity -> O(N^2)");
     System.out.println("Space Complexity -> O(1)");
+    System.out.println("--------------------------");
+    System.out.println("Input Array ->");
+    System.out.println(Arrays.toString(arr2));
+    System.out.println("Output ->");
     calculateAllSubArraysCarryForward(arr2);
     System.out.println();
   }

@@ -20,11 +20,13 @@ public class SumOfAllSubArraysSum {
   public static void main(String[] args) {
     int[] arr = { 3, -1, 4 };
 
+    System.out.println();
     System.out.println("Q Given an array, find sum of all sub array sums.");
     System.out.println("---------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("---------------------------");
     System.out.println(calculateSumOfAllSubArraysSum(arr));
+    System.out.println();
   }
 }
