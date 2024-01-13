@@ -54,7 +54,7 @@ public class MyMinHeap {
     while (2 * index + 1 < N) {
       int parentEle = heaps.get(index), leftIndex = 2 * index + 1, rightIndex = 2 * index + 2;
       int leftChild = heaps.get(leftIndex);
-      int rightChild = heaps.get(rightIndex);
+      int rightChild = heaps.get(rightIndex >= N ? leftIndex : rightIndex);
 
       int minElement = Math.min(parentEle, Math.min(leftChild, rightChild));
 
@@ -79,7 +79,7 @@ public class MyMinHeap {
     while (2 * index + 1 < N) {
       int parentEle = heaps.get(index), leftIndex = 2 * index + 1, rightIndex = 2 * index + 2;
       int leftChild = heaps.get(leftIndex);
-      int rightChild = heaps.get(rightIndex);
+      int rightChild = heaps.get(rightIndex >= N ? leftIndex : rightIndex);
 
       int minElement = Math.min(parentEle, Math.min(leftChild, rightChild));
 
