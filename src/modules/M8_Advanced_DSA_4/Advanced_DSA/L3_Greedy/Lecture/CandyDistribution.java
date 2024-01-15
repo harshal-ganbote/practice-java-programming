@@ -55,7 +55,7 @@ public class CandyDistribution {
 
     System.out.println();
     System.out.println("""
-        Candy Distribution
+        Q Candy Distribution
         There are N Students with their marks. Teacher has to give
         them candies such that
         a) Every student should have at least 1 Candy.
