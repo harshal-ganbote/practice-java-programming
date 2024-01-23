@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class PrintDiagonal2DMatrices {
 
+  /*
+   * Q Given a mat[N][N], print diagonal elements.
+   */
   static void printLeftDiagonalElements(int[][] A) {
     int N = A.length;
     int index = 0;
@@ -39,6 +42,9 @@ public class PrintDiagonal2DMatrices {
     System.out.println();
   }
 
+  /*
+   * Q Given a mat[N][M], print diagonal elements going R-L.
+   */
   static void printRtoLDiagonalElements(int[][] A) {
     int N = A.length;
     int M = A[0].length;
@@ -74,7 +80,7 @@ public class PrintDiagonal2DMatrices {
 
     System.out.println();
     System.out.println("Q Given a mat[N][N], print diagonal elements.");
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
@@ -88,9 +94,9 @@ public class PrintDiagonal2DMatrices {
     System.out.println("2 -> Right Diagonal");
     System.out.println("Output ->");
     printRightDiagonalElements(mat1);
-    System.out.println("----------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Q Given a mat[N][M], print diagonal elements going R-L.");
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(N*M)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
