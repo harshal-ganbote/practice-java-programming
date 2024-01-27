@@ -21,7 +21,7 @@ public class FractionalKnapsack {
     int ans = 0;
 
     for (int index = 0; index < N; index++) {
-      PairItem item = new PairItem(A[index], B[index], (double) (B[index] / A[index]));
+      PairItem item = new PairItem(A[index], B[index]);
 
       items.add(item);
     }
