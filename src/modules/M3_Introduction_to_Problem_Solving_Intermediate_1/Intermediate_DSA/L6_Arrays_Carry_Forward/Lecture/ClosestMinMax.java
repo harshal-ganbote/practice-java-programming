@@ -99,8 +99,8 @@ public class ClosestMinMax {
     System.out.println();
     System.out.println("""
         Q Closest Min Max
-          Given an array, find the length of the smallest sub array
-          which contains both min & max of the array.""");
+        Given an array, find the length of the smallest sub array
+        which contains both min & max of the array.""");
     System.out.println("------------------------------------------------------");
     System.out.println("There are following approach Please Select One");
     System.out.println("1 -> Brute force approach");

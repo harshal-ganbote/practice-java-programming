@@ -80,7 +80,6 @@ public class CountAGPairs {
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
-    System.out.println("Input Array ->");
     System.out.println("Input Char Array ->");
     System.out.println(Arrays.toString(s1));
     System.out.println("Output ->");

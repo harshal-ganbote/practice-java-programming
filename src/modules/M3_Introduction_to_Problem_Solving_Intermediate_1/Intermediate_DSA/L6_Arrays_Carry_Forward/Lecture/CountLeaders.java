@@ -87,7 +87,6 @@ public class CountLeaders {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    System.out.println("Input Array ->");
     System.out.println(Arrays.toString(arr1));
     System.out.println("Output ->");
     System.out.println(countLeadersOptimized(arr1));
