@@ -40,6 +40,7 @@ public class RotateMatrices {
     int[][] mat1 = { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 },
         { 16, 17, 18, 19, 20 }, { 21, 22, 23, 24, 25 } };
 
+    System.out.println();
     System.out.println("Q. Given a mat[N][N], rotate it by 90 degrees, in clockwise direction.");
     System.out.println("---------------------------------------------------");
     System.out.println("Time Complexity -> O(N^2)");
@@ -49,5 +50,6 @@ public class RotateMatrices {
     print2DArray(mat1);
     System.out.println("Output ->");
     print2DArray(rotate90Degree(mat1));
+    System.out.println();
   }
 }
