@@ -1,9 +1,13 @@
-package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L12_Bit_Manipulations_1;
+package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L12_Bit_Manipulations_1.Lecture;
 
 import java.util.Arrays;
 
 public class SingleNumber {
 
+	/*
+	 * Q Given N array elements, every element repeats twice except 1. Find the
+	 * unique element.
+	 */
 	static int findUniqueNumberBruteForce(int[] A) {
 		int N = A.length;
 		int ans = -1;
@@ -41,8 +45,9 @@ public class SingleNumber {
 		int[] arr2 = { 12, 9, 12, 8, 7, 9, 8 };
 		int[] arr3 = { 2, 9, 7, 2, 7 };
 
-		System.out.println("Q. Given N array elements, every element repeats twice except 1. Find the unique element.");
-		System.out.println("----------------------------------------------------------------");
+		System.out.println();
+		System.out.println("Q Given N array elements, every element repeats twice except 1. Find the unique element.");
+		System.out.println("---------------------------------------------------");
 		System.out.println("1 -> Brute force approach");
 		System.out.println("Time Complexity -> O(N^2)");
 		System.out.println("Space Complexity -> O(1)");
@@ -81,5 +86,6 @@ public class SingleNumber {
 		System.out.println("Output ->");
 		System.out.println(findUniqueNumberOptimized(arr3));
 		System.out.println("-----------------------------------");
+		System.out.println();
 	}
 }
