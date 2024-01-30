@@ -67,7 +67,7 @@ public class MajorityElement {
         return the majority element.
         The majority element is the element that appears more than ⌊n / 2⌋ times.
         assumption:Assume that the array will always contain a majority element.""");
-    System.out.println("-----------------------------------------------------");
+    System.out.println("---------------------------------------------------");
     System.out.println("There are following approach Please Select One");
     System.out.println("1 -> Brute force approach");
     System.out.println("Time Complexity -> O(N^2)");
