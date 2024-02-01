@@ -1,7 +1,10 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L11_Bit_Manipulations_2;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L13_Bit_Manipulations_2.Lecture;
 
 public class CountBits {
 
+  /*
+   * Q Given N and i, check if i bit position is set or not.
+   */
   static boolean checkBit(int A, int i) {
     return (A & (1 << i)) != 0;
   }
@@ -32,8 +35,10 @@ public class CountBits {
   }
 
   public static void main(String[] args) {
-    System.out.println("Q. Given N and i, check if i bit position is set or not.");
-    System.out.println("----------------------------------------------------------------");
+
+    System.out.println();
+    System.out.println("Q Given N and i, check if i bit position is set or not.");
+    System.out.println("---------------------------------------------------");
     System.out.println("Time Complexity -> O(1)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
@@ -71,5 +76,6 @@ public class CountBits {
     System.out.println("Output ->");
     System.out.println(countBitsApproach2(45));
     System.out.println("-----------------------------------");
+    System.out.println();
   }
 }
