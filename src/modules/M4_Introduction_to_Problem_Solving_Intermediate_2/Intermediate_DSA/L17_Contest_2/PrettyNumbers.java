@@ -1,9 +1,20 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.Contest_2;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L17_Contest_2;
 
 import java.util.ArrayList;
 
 public class PrettyNumbers {
-  
+
+  /*
+   * Problem Description
+   * Given the array A of N integers. Return the pretty numbers in the array in
+   * the same relative ordering as the original array. Pretty Numbers are the ones
+   * which have at least 2 numbers less than themselves.
+   * 
+   * 
+   * Problem Constraints
+   * 1 <= N <= 10^5
+   * 1 <= A[i] <= 10^9
+   */
   static ArrayList<Integer> solve(ArrayList<Integer> A) {
     int firstMin = A.get(0), secondMin = Integer.MAX_VALUE;
     int firstMinIndex = 0;
@@ -36,7 +47,6 @@ public class PrettyNumbers {
     return ans;
   }
 
-
   public static void main(String[] args) {
     ArrayList<Integer> arr1 = new ArrayList<>();
     ArrayList<Integer> arr2 = new ArrayList<>();
@@ -51,8 +61,10 @@ public class PrettyNumbers {
     arr2.add(4);
     arr2.add(3);
 
+    System.out.println();
     System.out.println(solve(arr1));
     System.out.println("------------");
     System.out.println(solve(arr2));
+    System.out.println();
   }
 }
