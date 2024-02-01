@@ -1,17 +1,22 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L13_Sorting;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L16_Sorting.Lecture;
 
 import java.util.Arrays;
 
 public class NobleIntegerUnique {
-  
-  // ? Noble Integer Unique Elements
+
+  /*
+   * Q Given N array elements of unique numbers, calculate number of noble
+   * integers present in it.
+   * A[i] is said to be Noble if
+   * (No of elements < A[i]) = A[i]
+   */
   static int countNobleIntegerBruteForce(int[] A) {
     int N = A.length;
     int ans = 0;
 
     for (int index = 0; index < N; index++) {
       int count = 0;
-      
+
       for (int jIndex = 0; jIndex < N; jIndex++) {
         if (A[jIndex] < A[index]) {
           count++;
@@ -32,8 +37,8 @@ public class NobleIntegerUnique {
 
     Arrays.sort(A);
 
-    for (int index = 0 ; index < N; index++) {
-      
+    for (int index = 0; index < N; index++) {
+
       if (A[index] == index) {
         ans++;
       }
@@ -43,16 +48,17 @@ public class NobleIntegerUnique {
   }
 
   public static void main(String[] args) {
-    int[] arr1 = {1, -5, 3, 5, -10, 4};
-    int[] arr2 = {-3, 0, 2, 5};
-    int[] arr3 = {-10, -5, 1, 3, 4, 5, 10};
+    int[] arr1 = { 1, -5, 3, 5, -10, 4 };
+    int[] arr2 = { -3, 0, 2, 5 };
+    int[] arr3 = { -10, -5, 1, 3, 4, 5, 10 };
 
+    System.out.println();
     System.out.println("""
         Q Given N array elements of unique numbers, calculate number of noble
         integers present in it.
         A[i] is said to be Noble if
         (No of elements < A[i]) = A[i]""");
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("---------------------------------------------------");
     System.out.println("Time Complexity -> O(N^2)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
@@ -93,5 +99,6 @@ public class NobleIntegerUnique {
     System.out.println("Output ->");
     System.out.println(countNobleIntegerOptimized(arr3));
     System.out.println("-----------------------------------");
+    System.out.println();
   }
 }

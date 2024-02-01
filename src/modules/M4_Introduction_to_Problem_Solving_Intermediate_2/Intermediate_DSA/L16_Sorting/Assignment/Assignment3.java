@@ -1,9 +1,9 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L13_Sorting.Assignment;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L16_Sorting.Assignment;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L13_Sorting.MyFactorComparator;
+import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L16_Sorting.Lecture.MyFactorComparator;
 
 public class Assignment3 {
 
@@ -39,8 +39,11 @@ public class Assignment3 {
     arr2.add(2);
     arr2.add(4);
     arr2.add(7);
+
+    System.out.println();
     System.out.println(solve(arr1));
-    System.out.println("---------------------");
+    System.out.println("--------------------");
     System.out.println(solve(arr2));
+    System.out.println();
   }
 }

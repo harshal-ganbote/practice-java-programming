@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L13_Sorting.Assignment;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L16_Sorting.Assignment;
 
 import java.util.Arrays;
 
@@ -39,8 +39,10 @@ public class Assignment2 {
     int[] arr1 = { 3, 2, 1, 3 };
     int[] arr2 = { 1, 1, 3, 3 };
 
+    System.out.println();
     System.out.println(solve(arr1));
     System.out.println("-------");
     System.out.println(solve(arr2));
+    System.out.println();
   }
 }
