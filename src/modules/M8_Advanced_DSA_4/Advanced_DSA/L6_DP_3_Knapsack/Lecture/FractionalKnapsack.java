@@ -2,7 +2,6 @@ package modules.M8_Advanced_DSA_4.Advanced_DSA.L6_DP_3_Knapsack.Lecture;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class FractionalKnapsack {
 
@@ -15,7 +14,7 @@ public class FractionalKnapsack {
    * Note 1:- Every item can be at max picked only once.
    * Note 2:- We can pick fraction of any item as well.
    */
-  static int findMaxCapacity(int[] A, int B[], int K) {
+  static int findMaxCapacity(int[] A, int[] B, int K) {
     int N = A.length;
     ArrayList<PairItem> items = new ArrayList<>();
     int ans = 0;
@@ -26,7 +25,7 @@ public class FractionalKnapsack {
       items.add(item);
     }
 
-    Collections.sort(items, (i1, i2) -> (int) i2.ratio - (int) i1.ratio);
+    items.sort((i1, i2) -> (int) i2.ratio - (int) i1.ratio);
 
     for (int index = 0; index < N; index++) {
 
@@ -34,7 +33,7 @@ public class FractionalKnapsack {
         ans += items.get(index).value;
         K -= items.get(index).weight;
       } else {
-        ans += K * items.get(index).ratio;
+        ans += (int) (K * items.get(index).ratio);
         break;
       }
 
@@ -46,6 +45,7 @@ public class FractionalKnapsack {
   public static void main(String[] args) {
     int[] w = { 20, 15, 50, 10, 25, 12, 5 };
     int[] v = { 200, 180, 250, 150, 200, 132, 100 };
+    int k = 70;
 
     System.out.println();
     System.out.println("""
@@ -64,7 +64,7 @@ public class FractionalKnapsack {
     System.out.println(Arrays.toString(w));
     System.out.println(Arrays.toString(v));
     System.out.println("Output ->");
-    System.out.println(findMaxCapacity(w, v, 70));
+    System.out.println(findMaxCapacity(w, v, k));
     System.out.println("--------------------------");
     System.out.println();
   }
