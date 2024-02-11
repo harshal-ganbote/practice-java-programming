@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.Contest_3;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L26_Contest_3;
 
 import java.util.HashMap;
 

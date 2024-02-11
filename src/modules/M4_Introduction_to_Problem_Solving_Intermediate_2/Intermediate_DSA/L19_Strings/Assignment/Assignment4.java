@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L15_Strings.Assignment;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings.Assignment;
 
 import java.util.Arrays;
 

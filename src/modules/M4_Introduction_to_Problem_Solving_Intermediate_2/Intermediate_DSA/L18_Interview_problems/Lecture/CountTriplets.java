@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L18_Interview_problems;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L18_Interview_problems.Lecture;
 
 import java.util.Arrays;
 

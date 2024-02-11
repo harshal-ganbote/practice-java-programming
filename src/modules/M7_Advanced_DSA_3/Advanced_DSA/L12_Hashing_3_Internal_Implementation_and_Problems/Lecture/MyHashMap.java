@@ -1,4 +1,4 @@
-package modules.M7_Advanced_DSA_3.Advanced_DSA.L1_Hashing_3_Internal_Implementation_and_Problems.Lecture;
+package modules.M7_Advanced_DSA_3.Advanced_DSA.L12_Hashing_3_Internal_Implementation_and_Problems.Lecture;
 
 import java.util.ArrayList;
 

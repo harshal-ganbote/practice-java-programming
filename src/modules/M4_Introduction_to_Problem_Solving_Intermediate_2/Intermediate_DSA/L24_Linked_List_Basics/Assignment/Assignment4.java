@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Linked_List_Basics.Assignment;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L24_Linked_List_Basics.Assignment;
 
 /*
 Problem Description

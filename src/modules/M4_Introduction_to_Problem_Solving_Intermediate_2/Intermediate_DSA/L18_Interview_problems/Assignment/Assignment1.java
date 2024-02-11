@@ -2,7 +2,7 @@ package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_D
 
 public class Assignment1 {
   /*
-   * ? Length of longest consecutive ones
+   * Q  Length of longest consecutive ones
    * Given a binary string A. It is allowed to do at most one swap between any 0
    * and 1.
    * Find and return the length of the longest consecutive 1’s that can be

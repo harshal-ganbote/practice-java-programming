@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Recursion_2;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L23_Recursion_2;
 
 public class FastPowerOfNumber {
 

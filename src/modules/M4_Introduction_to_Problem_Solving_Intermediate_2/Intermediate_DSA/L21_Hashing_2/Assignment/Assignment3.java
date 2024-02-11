@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L17_Hashing_2.Assignment;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L21_Hashing_2.Assignment;
 
 import java.util.HashMap;
 import java.util.Arrays;
