@@ -4,7 +4,10 @@ import java.util.Arrays;
 
 public class CountTriplets {
 
-  // ? Increasing Triplets
+  /*
+   * Q Given an array, count the number of triplets i, j & k such that
+   * i < j < k & A[i] < A[j] < A[k]
+   */
   static int countTripletsBruteForce(int[] A) {
     int N = A.length;
     int ans = 0;
@@ -57,6 +60,7 @@ public class CountTriplets {
     int[] arr1 = { 2, 6, 9, 4, 10 };
     int[] arr2 = { 4, 1, 2, 6, 9, 7 };
 
+    System.out.println();
     System.out.println("""
         Q Given an array, count the number of triplets i, j & k such that
         i < j < k & A[i] < A[j] < A[k]
@@ -89,5 +93,6 @@ public class CountTriplets {
     System.out.println("Output ->");
     System.out.println(countTripletsOptimized(arr2));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

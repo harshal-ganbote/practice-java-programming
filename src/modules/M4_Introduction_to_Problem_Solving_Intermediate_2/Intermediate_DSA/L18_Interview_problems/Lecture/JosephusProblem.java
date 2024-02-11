@@ -2,7 +2,13 @@ package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_D
 
 public class JosephusProblem {
 
-  // ? Josephus Problem
+  /*
+   * Q Initially N people are standing in a circle. Person 1 has a knife.
+   * He kills his adjacent clockwise person, and pass on the knife
+   * to next adjacent clockwise person.
+   * Repeat until only a single person stands. Who is this last
+   * remaining person ?
+   */
   static int highestPowerOfTwo(int A) {
     if (A <= 0) {
       return 0;
@@ -25,6 +31,8 @@ public class JosephusProblem {
   }
 
   public static void main(String[] args) {
+
+    System.out.println();
     System.out.println("""
         Q Initially N people are standing in a circle. Person 1 has a knife.
         He kills his adjacent clockwise person, and pass on the knife
@@ -51,5 +59,6 @@ public class JosephusProblem {
     System.out.println("Output ->");
     System.out.println(findLastReamingPerson(77));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

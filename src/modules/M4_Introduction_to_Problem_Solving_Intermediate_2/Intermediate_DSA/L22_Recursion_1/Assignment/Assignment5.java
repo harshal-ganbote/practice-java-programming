@@ -1,12 +1,13 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L18_Recursion_1.Assignment;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Recursion_1.Assignment;
 
-public class Assignment4 {
+public class Assignment5 {
 
   /*
    * Problem Description
-   * You are given an integer A, print 1 to A using using recursion.
+   * You are given an integer A, print A to 1 using using recursion.
    * 
-   * Note :- After printing all the numbers from 1 to A, print a new line.
+   * Note :- After printing all the numbers from A to 1, print a new line.
+   * 
    * 
    * 
    * Problem Constraints
@@ -18,8 +19,8 @@ public class Assignment4 {
       return;
     }
 
-    solve(A - 1);
     System.out.print(A + " ");
+    solve(A - 1);
   }
 
   public static void main(String[] args) {

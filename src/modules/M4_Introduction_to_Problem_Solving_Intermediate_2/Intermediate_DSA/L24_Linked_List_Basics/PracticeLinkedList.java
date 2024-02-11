@@ -42,5 +42,4 @@ public class PracticeLinkedList {
     LinkedList.print(n2);
     System.out.println("-------------------------------------");
   }
-
 }
