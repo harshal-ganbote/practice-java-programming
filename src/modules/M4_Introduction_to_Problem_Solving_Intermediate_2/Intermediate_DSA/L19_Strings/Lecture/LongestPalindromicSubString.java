@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings.Lecture;
 
 
 public class LongestPalindromicSubString {
@@ -70,6 +70,7 @@ public class LongestPalindromicSubString {
     char[] s2 = { 'a', 'b', 'c', 'b', 'a' };
     char[] s3 = { 'x', 'b', 'd', 'y', 'z', 'z', 'y', 'd', 'b', 'd', 'y', 'z', 'y',
         'd', 'x' };
+
     System.out.println();
     System.out.println("""
         Q Given a string find length of longest palindromic substring?
@@ -115,5 +116,6 @@ public class LongestPalindromicSubString {
     System.out.println("Output ->");
     System.out.println(findLongestPalindromicSubStringOptimized(s3));
     System.out.println("-----------------------------------");
+    System.out.println();
   }
 }

@@ -1,7 +1,11 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings.Lecture;
 
 public class CheckPalindromeString {
 
+  /*
+   * Q Given a string reverse it
+   * S = MADAM, rev(S) = MADAM"
+   */
   static void reverseString(char[] A) {
     int N = A.length;
     int index = 0;
@@ -17,6 +21,10 @@ public class CheckPalindromeString {
     }
   }
 
+  /*
+   * Q Check if a string is palindrome or not?
+   * S = MADAM == rev(S) = MADAM"
+   */
   static boolean isPalindrome(char[] A) {
     int N = A.length;
     int index = 0;
@@ -38,6 +46,7 @@ public class CheckPalindromeString {
     char[] s1 = { 'a', 'b', 'c', 'd', 'e', 'f' };
     char[] s2 = { 'a', 'b', 'c', 'd', 'c', 'b', 'a' };
 
+    System.out.println();
     System.out.println("""
         Q Given a string reverse it
         S = MADAM, rev(S) = MADAM"
@@ -70,5 +79,6 @@ public class CheckPalindromeString {
     System.out.println("Output ->");
     System.out.println(isPalindrome(s2));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

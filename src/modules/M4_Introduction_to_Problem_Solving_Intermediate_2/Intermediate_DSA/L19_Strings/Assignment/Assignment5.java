@@ -34,8 +34,10 @@ public class Assignment5 {
     String s1 = "scaler";
     String s2 = "academy";
 
+    System.out.println();
     System.out.println(solve(s1));
     System.out.println("------------");
     System.out.println(solve(s2));
+    System.out.println();
   }
 }

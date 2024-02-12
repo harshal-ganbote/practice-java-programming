@@ -1,20 +1,23 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings.Lecture;
 
 public class CharArraySort {
 
+  /*
+   * Q Given a String containing only ['a' - 'z'], sort it.
+   * { dictionary order }
+   */
   static void sortCharacterArray(char[] A) {
-    int N = A.length;
     int[] charCount = new int[26];
 
-    for (int index = 0; index < N; index++) {
-      int ch = A[index] - 'a';
+    for (char letter : A) {
+      int ch = letter - 'a';
       charCount[ch]++;
     }
 
     int indexToFill = 0;
 
     for (int index = 0; index < 26; index++) {
-      char charToFill = (char)(index + 'a');
+      char charToFill = (char) (index + 'a');
       int timesToFill = charCount[index];
 
       while (timesToFill > 0) {
@@ -29,6 +32,7 @@ public class CharArraySort {
     char[] str1 = { 'a', 'b', 'd', 'a', 'c', 'b', 'd', 'e' };
     char[] str2 = { 's', 'h', 'r', 'a', 'd', 'd', 'h', 'a' };
 
+    System.out.println();
     System.out.println("""
         Q Given a String containing only ['a' - 'z'], sort it.
         { dictionary order }
@@ -49,5 +53,6 @@ public class CharArraySort {
     sortCharacterArray(str2);
     System.out.println(str2);
     System.out.println("----------------------");
+    System.out.println();
   }
 }

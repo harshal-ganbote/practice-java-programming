@@ -58,8 +58,10 @@ public class Assignment1 {
     String s1 = "111000";
     String s2 = "111011101";
 
+    System.out.println();
     System.out.println(solve(s1));
     System.out.println("-------");
     System.out.println(solve(s2));
+    System.out.println();
   }
 }

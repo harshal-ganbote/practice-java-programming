@@ -22,21 +22,23 @@ public class Assignment6 {
   static String solve(String A) { 
     String[] str = A.trim().split("\\s+");
     int N = str.length;
-    String revString = "";
+    StringBuilder revString = new StringBuilder();
 
     for (int index = N - 1; index >= 0; index--) {
-      revString += index == 0 ? str[index] : str[index] + " ";
+      revString.append(index == 0 ? str[index] : str[index] + " ");
     }
 
-    return revString;
+    return revString.toString();
   }
 
   public static void main(String[] args) {
     String s1 = "the sky is blue";
     String s2 = "this is ib";
 
+    System.out.println();
     System.out.println(solve(s1));
     System.out.println("------------");
     System.out.println(solve(s2));
+    System.out.println();
   }
 }

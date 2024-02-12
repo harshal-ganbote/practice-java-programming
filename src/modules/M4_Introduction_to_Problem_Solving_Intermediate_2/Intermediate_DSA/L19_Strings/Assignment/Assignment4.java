@@ -19,8 +19,8 @@ public class Assignment4 {
     int M = arrayLength(A);
     int[] countArray = new int[M];
 
-    for (int index = 0; index < N; index++) {
-      countArray[A[index] - 1]++;
+    for (int num: A) {
+      countArray[num - 1]++;
     }
 
     int indexToFill = 0;
@@ -52,8 +52,10 @@ public class Assignment4 {
     int[] arr1 = { 1, 3, 1 };
     int[] arr2 = { 4, 2, 1, 3 };
 
+    System.out.println();
     System.out.println(Arrays.toString(solve(arr1)));
     System.out.println("------------------");
     System.out.println(Arrays.toString(solve(arr2)));
+    System.out.println();
   }
 }

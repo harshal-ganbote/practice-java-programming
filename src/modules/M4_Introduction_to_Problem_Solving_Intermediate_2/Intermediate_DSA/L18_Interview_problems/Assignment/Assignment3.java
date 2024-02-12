@@ -2,7 +2,7 @@ package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_D
 
 public class Assignment3 {
   /*
-   * ? Josephus Problem - 2
+   * Q Josephus Problem - 2
    * Problem Description
    * There are A people standing in a circle. Person 1 kills their immediate
    * clockwise
@@ -36,8 +36,11 @@ public class Assignment3 {
   }
 
   public static void main(String[] args) {
+
+    System.out.println();
     System.out.println(solve(4));
     System.out.println("-------");
     System.out.println(solve(5));
+    System.out.println();
   }
 }

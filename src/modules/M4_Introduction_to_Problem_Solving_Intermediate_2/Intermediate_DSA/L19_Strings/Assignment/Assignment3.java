@@ -38,8 +38,10 @@ public class Assignment3 {
     String s1 = "Hello";
     String s2 = "tHiSiSaStRiNg";
 
+    System.out.println();
     System.out.println(solve(s1));
     System.out.println("------------");
     System.out.println(solve(s2));
+    System.out.println();
   }
 }

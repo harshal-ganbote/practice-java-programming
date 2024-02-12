@@ -35,10 +35,12 @@ public class Assignment1 {
 
   public static void main(String[] args) {
     char[] s1 = {'S', 'c', 'A', 'l', 'e', 'r', 'A', 'c', 'a', 'D', 'e', 'm', 'y'};
-    char[] s2 = {'S', 'c', 'a', 'L', 'e', 'r', '#', '2', '0', '2', '0'}; 
+    char[] s2 = {'S', 'c', 'a', 'L', 'e', 'r', '#', '2', '0', '2', '0'};
 
+    System.out.println();
     System.out.println(to_lower(s1));
     System.out.println("-------------");
     System.out.println(to_lower(s2));
+    System.out.println();
   }
 }

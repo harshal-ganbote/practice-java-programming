@@ -13,7 +13,7 @@ public class Assignment7 {
    * A string which reads the same backwards. More formally, A is palindrome if
    * reverse(A) = A.
    * 
-   * Incase of conflict, return the substring which occurs first ( with the least
+   * In case of conflict, return the substring which occurs first ( with the least
    * starting index).
    * 
    * 
@@ -61,8 +61,10 @@ public class Assignment7 {
     String s1 = "aaaabaaa";
     String s2 = "abba";
 
+    System.out.println();
     System.out.println(longestPalindrome(s1));
     System.out.println("-----------");
     System.out.println(longestPalindrome(s2));
+    System.out.println();
   }
 }

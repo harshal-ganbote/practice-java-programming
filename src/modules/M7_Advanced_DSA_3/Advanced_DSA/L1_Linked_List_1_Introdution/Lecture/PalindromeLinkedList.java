@@ -23,6 +23,13 @@ public class PalindromeLinkedList {
 
   static boolean checkPalindromeOptimized(Node head) {
     int size  = LinkedList.size(head);
+    int mid = size / 2;
+
+    if ((size & 1) == 1) {
+      mid++;
+    }
+
+    System.out.println(mid);
 
     return true;
   }
@@ -33,7 +40,9 @@ public class PalindromeLinkedList {
     Node h1 = LinkedList.create(arr1);
     Node h2 = LinkedList.create(arr2);
 
-    System.out.println(checkPalindromeBruteForce(h1));
-    System.out.println(checkPalindromeBruteForce(h2));
+    // System.out.println(checkPalindromeBruteForce(h1));
+    // System.out.println(checkPalindromeBruteForce(h2));
+    System.out.println(checkPalindromeOptimized(h1));
+    System.out.println(checkPalindromeOptimized(h2));
   }
 }
