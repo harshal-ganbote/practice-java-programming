@@ -1,29 +1,31 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1.Lecture;
 
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class NonRepeatingNumber {
 
+  /*
+   * Q Find the first non-repeating element.
+   */
   static int findNonRepeatingFirstNumber(int[] A) {
-    int N = A.length;
     HashMap<Integer, Integer> hMap = new HashMap<>();
 
-    for (int index = 0; index < N; index++) {
+    for (int num : A) {
 
-      if (hMap.containsKey(A[index])) {
-        int value = hMap.get(A[index]);
-        hMap.put(A[index], value + 1);
+      if (hMap.containsKey(num)) {
+        int value = hMap.get(num);
+        hMap.put(num, value + 1);
       } else {
-        hMap.put(A[index], 1);
+        hMap.put(num, 1);
       }
 
     }
 
-    for (int index = 0; index < N; index++) {
+    for (int num : A) {
 
-      if (hMap.get(A[index]) == 1) {
-        return A[index];
+      if (hMap.get(num) == 1) {
+        return num;
       }
     }
 
@@ -56,5 +58,6 @@ public class NonRepeatingNumber {
     System.out.println("Output ->");
     System.out.println(findNonRepeatingFirstNumber(arr3));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

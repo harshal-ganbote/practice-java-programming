@@ -24,9 +24,9 @@ public class Assignment3 {
 
     preSumArray[0] = A[0];
 
-    // if (preSumArray[0] == 0) {
-    // return 1;
-    // }
+     if (preSumArray[0] == 0) {
+     return 1;
+     }
 
     for (int index = 1; index < N; index++) {
       preSumArray[index] = preSumArray[index - 1] + A[index];
@@ -50,8 +50,10 @@ public class Assignment3 {
     int[] arr1 = { 1, 2, 3, 4, 5 };
     int[] arr2 = { 4, -1, 1 };
 
+    System.out.println();
     System.out.println(solve(arr1));
     System.out.println("----------");
     System.out.println(solve(arr2));
+    System.out.println();
   }
 }

@@ -1,10 +1,14 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1.Lecture;
 
 import java.util.Arrays;
 import java.util.HashSet;
 
 public class DistinctNumbers {
 
+  /*
+   * Q Given arr[N] elements, check if there exists a sub array
+   * with sum = 0.
+   */
   static int countDistinctNumbers(int[] A) {
     HashSet<Integer> hSet = new HashSet<>();
 
@@ -25,7 +29,6 @@ public class DistinctNumbers {
         Q Given arr[N] elements, check if there exists a sub array
         with sum = 0.
         """);
-
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
@@ -44,5 +47,6 @@ public class DistinctNumbers {
     System.out.println("Output ->");
     System.out.println(countDistinctNumbers(arr3));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

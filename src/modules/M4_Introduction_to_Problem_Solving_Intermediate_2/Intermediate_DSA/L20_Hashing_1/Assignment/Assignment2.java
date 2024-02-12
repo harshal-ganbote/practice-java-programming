@@ -47,8 +47,10 @@ public class Assignment2 {
     int[] arr1 = { 10, 5, 3, 4, 3, 5, 6 };
     int[] arr2 = { 6, 10, 5, 4, 9, 120 };
 
+    System.out.println();
     System.out.println(solve(arr1));
     System.out.println("------------");
     System.out.println(solve(arr2));
+    System.out.println();
   }
 }

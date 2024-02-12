@@ -15,11 +15,10 @@ public class Assignment4 {
    * 1 <= A[i] <= 10^5
    */
   static int[] solve(int[] A) {
-    int N = A.length;
     int M = arrayLength(A);
     int[] countArray = new int[M];
 
-    for (int num: A) {
+    for (int num : A) {
       countArray[num - 1]++;
     }
 

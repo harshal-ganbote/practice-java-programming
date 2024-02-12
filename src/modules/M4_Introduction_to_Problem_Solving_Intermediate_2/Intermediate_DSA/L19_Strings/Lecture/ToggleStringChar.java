@@ -2,6 +2,10 @@ package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_D
 
 public class ToggleStringChar {
 
+  /*
+   * Q Given a string toggle the case of every char.
+   * upper case -> lower case -> upper case
+   */
   static String toggleStringChar(String A) {
     int N = A.length();
     StringBuilder ans = new StringBuilder();

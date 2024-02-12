@@ -53,6 +53,7 @@ public class Assignment1 {
     int[] arr2 = { 2, 5, 9, 2, 8 };
     int[] arr2B = { 3, 2 };
 
+    System.out.println();
     System.out.println(Arrays.toString(arr1));
     System.out.println(Arrays.toString(arr1B));
     System.out.println("-------");
@@ -62,5 +63,6 @@ public class Assignment1 {
     System.out.println(Arrays.toString(arr2B));
     System.out.println("-------");
     System.out.println(Arrays.toString(solve(arr2, arr2B)));
+    System.out.println();
   }
 }

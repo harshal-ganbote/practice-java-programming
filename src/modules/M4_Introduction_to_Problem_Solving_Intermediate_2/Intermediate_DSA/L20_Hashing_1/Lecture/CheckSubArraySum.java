@@ -1,10 +1,14 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1.Lecture;
 
 import java.util.Arrays;
 import java.util.HashSet;
 
 public class CheckSubArraySum {
 
+  /*
+   * Q Given arr[N] elements, check if there exists a sub array
+   * with sum = 0.
+   */
   static boolean checkSubArraySumZero(int[] A) {
     int N = A.length;
     int[] preSumArray = new int[N];
@@ -18,6 +22,10 @@ public class CheckSubArraySum {
 
     for (int index = 1; index < N; index++) {
       preSumArray[index] = preSumArray[index - 1] + A[index];
+
+      if (preSumArray[index] == 0) {
+        return true;
+      }
     }
 
     for (int index = 0; index < N; index++) {
@@ -37,7 +45,6 @@ public class CheckSubArraySum {
         Q Given arr[N] elements, check if there exists a sub array
         with sum = 0.
         """);
-
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");

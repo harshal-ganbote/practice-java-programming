@@ -24,12 +24,23 @@ public class PalindromeLinkedList {
   static boolean checkPalindromeOptimized(Node head) {
     int size  = LinkedList.size(head);
     int mid = size / 2;
+    Node temp = head;
 
-    if ((size & 1) == 1) {
-      mid++;
+    for (int link = 0; link < mid; link++) {
+      temp = temp.next;
     }
 
-    System.out.println(mid);
+    Node midP = temp, firstNode = head;
+
+    midP = ReverseLinkedList.reverseLinkedList(midP);
+
+    while (midP != null) {
+      if (midP.data != firstNode.data) {
+        return false;
+      }
+      midP = midP.next;
+      firstNode = firstNode.next;
+    }
 
     return true;
   }

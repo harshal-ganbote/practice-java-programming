@@ -28,8 +28,10 @@ public class Assignment5 {
     int[] arr1 = { 3, 4, 3, 6, 6 };
     int[] arr2 = { 3, 3, 3, 9, 0, 1, 0 };
 
+    System.out.println();
     System.out.println(solve(arr1));
     System.out.println("-------");
     System.out.println(solve(arr2));
+    System.out.println();
   }
 }

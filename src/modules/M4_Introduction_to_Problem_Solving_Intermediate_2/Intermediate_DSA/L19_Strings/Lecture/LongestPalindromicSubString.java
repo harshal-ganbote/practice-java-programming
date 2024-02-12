@@ -1,8 +1,10 @@
 package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L19_Strings.Lecture;
 
-
 public class LongestPalindromicSubString {
 
+  /*
+   * Q Given a string find length of longest palindromic substring?
+   */
   static boolean isPalindrome(char[] A, int s, int e) {
     int index = s;
     int jIndex = e;
@@ -25,7 +27,7 @@ public class LongestPalindromicSubString {
 
     for (int index = 0; index < N; index++) {
       for (int jIndex = 0; jIndex < N; jIndex++) {
-      
+
         if (isPalindrome(A, index, jIndex)) {
           int len = jIndex - index + 1;
           ans = Math.max(ans, len);

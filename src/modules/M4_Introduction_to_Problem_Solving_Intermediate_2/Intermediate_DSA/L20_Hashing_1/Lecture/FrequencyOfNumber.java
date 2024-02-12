@@ -1,20 +1,24 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L20_Hashing_1.Lecture;
 
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class FrequencyOfNumber {
 
+  /*
+   * Q Find Frequency of Numbers
+   * Given N array elements & Q queries for each query
+   * find frequency of each element in array.
+   */
   static int[] findFrequencyOfNumberBruteForce(int[] A, int[] Q) {
-    int N = A.length;
     int M = Q.length;
     int[] ans = new int[M];
 
     for (int index = 0; index < M; index++) {
       int count = 0;
 
-      for (int jIndex = 0; jIndex < N; jIndex++) {
-        if (Q[index] == A[jIndex]) {
+      for (int num : A) {
+        if (Q[index] == num) {
           count++;
         }
       }
@@ -26,18 +30,17 @@ public class FrequencyOfNumber {
   }
 
   static int[] findFrequencyOfNumberOptimized(int[] A, int[] Q) {
-    int N = A.length;
     int M = Q.length;
     HashMap<Integer, Integer> hMap = new HashMap<>();
     int[] ans = new int[M];
 
-    for (int index = 0; index < N; index++) {
+    for (int num : A) {
 
-      if (hMap.containsKey(A[index])) {
-        int value = hMap.get(A[index]);
-        hMap.put(A[index], value + 1);
+      if (hMap.containsKey(num)) {
+        int value = hMap.get(num);
+        hMap.put(num, value + 1);
       } else {
-        hMap.put(A[index], 1);
+        hMap.put(num, 1);
       }
 
     }
@@ -59,6 +62,7 @@ public class FrequencyOfNumber {
     int[] arr1 = { 2, 6, 3, 8, 2, 8, 2, 3, 8, 10, 6 };
     int[] Q1 = { 2, 3, 4, 10 };
 
+    System.out.println();
     System.out.println();
     System.out.println("""
         Q Find Frequency of Numbers
@@ -85,5 +89,6 @@ public class FrequencyOfNumber {
     System.out.println("Output ->");
     System.out.println(Arrays.toString(findFrequencyOfNumberOptimized(arr1, Q1)));
     System.out.println("----------------------");
+    System.out.println();
   }
 }
