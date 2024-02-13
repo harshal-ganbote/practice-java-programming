@@ -32,7 +32,6 @@ public class CheckPairs {
       } else {
         hMap.put(ele, 1);
       }
-
     }
 
     for (int ele : A) {
@@ -102,5 +101,6 @@ public class CheckPairs {
     System.out.println("Output ->");
     System.out.println(checkPairsSumOptimized(arr3, 10));
     System.out.println("----------------------");
+    System.out.println();
   }
 }
