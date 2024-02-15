@@ -1,4 +1,4 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L21_Hashing_2;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L21_Hashing_2.Lecture;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,6 +6,10 @@ import java.util.HashSet;
 
 public class DistinctElementsSubArray {
 
+  /*
+   * Q Given N array elements, calculate no. of distinct elements
+   * in every sub array of size k.
+   */
   static int[] countDistinctElementsSubArrayBruteForce(int[] A, int k) {
     int s = 0;
     int e = k - 1;
@@ -81,8 +85,8 @@ public class DistinctElementsSubArray {
 
     System.out.println();
     System.out.println("""
-        Q Given N array elements, check if there exists pair (i, j)
-        such that A[i] + A[j] == K && (i != j) k is given sum""");
+        Q Given N array elements, calculate no. of distinct elements
+        in every sub array of size k.""");
     System.out.println("-----------------------------------------------------");
     System.out.println("1 -> Brute force approach");
     System.out.println("Time Complexity -> O(N*k)");
@@ -116,5 +120,6 @@ public class DistinctElementsSubArray {
     System.out.println(
         Arrays.toString(countDistinctElementsSubArrayOptimized(arr2, 5)));
     System.out.println("----------------------------------");
+    System.out.println();
   }
 }

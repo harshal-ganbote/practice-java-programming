@@ -74,8 +74,10 @@ public class Assignment3 {
     int[] arr1 = { 1, 2, 1, 3, 4, 3 };
     int[] arr2 = { 1, 1, 2, 2 };
 
+    System.out.println();
     System.out.println(Arrays.toString(dNums(arr1, 3)));
     System.out.println("---------");
     System.out.println(Arrays.toString(dNums(arr2, 1)));
+    System.out.println();
   }
 }

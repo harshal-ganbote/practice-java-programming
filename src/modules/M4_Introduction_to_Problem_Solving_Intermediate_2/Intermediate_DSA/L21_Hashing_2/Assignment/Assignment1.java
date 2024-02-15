@@ -51,8 +51,10 @@ public class Assignment1 {
     int[] arr1 = { 1, -2, 1, 2 };
     int[] arr2 = { 3, 2, -1 };
 
+    System.out.println();
     System.out.println(solve(arr1));
     System.out.println("--------");
     System.out.println(solve(arr2));
+    System.out.println();
   }
 }

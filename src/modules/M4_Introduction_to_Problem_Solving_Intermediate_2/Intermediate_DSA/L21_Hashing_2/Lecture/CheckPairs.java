@@ -1,10 +1,14 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L21_Hashing_2;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L21_Hashing_2.Lecture;
 
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class CheckPairs {
 
+  /*
+   * Q Given N array elements, check if there exists pair (i, j)
+   * such that A[i] + A[j] == K && (i != j) k is given sum
+   */
   static boolean checkPairsSumBruteForce(int[] A, int k) {
     int N = A.length;
 
