@@ -1,7 +1,11 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1.Lecture;
 
 public class FibonacciSeries {
 
+  /*
+   * Q Fibonacci Series
+   * Given N, compute Nth fibonacci term.
+   */
   static int computeFibonacciSeriesOfN(int N) {
 
     if (N == 0 || N == 1) {
@@ -12,12 +16,12 @@ public class FibonacciSeries {
   }
 
   public static void main(String[] args) {
+
     System.out.println();
     System.out.println("""
         Q Fibonacci Series
         Given N, compute Nth fibonacci term.""");
     System.out.println("---------------------------------------------------");
-
     System.out.println("Time Complexity -> O(2^N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
@@ -31,5 +35,6 @@ public class FibonacciSeries {
     System.out.println("Output ->");
     System.out.println(computeFibonacciSeriesOfN(7));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

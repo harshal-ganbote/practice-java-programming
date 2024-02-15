@@ -1,7 +1,10 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1.Lecture;
 
 public class SumOfNaturalNumber {
 
+  /*
+   * Q Sum of first N natural numbers.
+   */
   static int findSumOfNaturalNumber(int N) {
 
     if (N == 1) {
@@ -12,6 +15,7 @@ public class SumOfNaturalNumber {
   }
 
   public static void main(String[] args) {
+
     System.out.println();
     System.out.println("Q Sum of first N natural numbers.");
     System.out.println("-----------------------------------------------------");
@@ -28,5 +32,6 @@ public class SumOfNaturalNumber {
     System.out.println("Output ->");
     System.out.println(findSumOfNaturalNumber(75));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

@@ -24,9 +24,13 @@ public class Assignment5 {
   }
 
   public static void main(String[] args) {
+
+    System.out.println();
     solve(10);
     System.out.println();
+    System.out.println("------------");
     solve(5);
+    System.out.println();
     System.out.println();
   }
 }

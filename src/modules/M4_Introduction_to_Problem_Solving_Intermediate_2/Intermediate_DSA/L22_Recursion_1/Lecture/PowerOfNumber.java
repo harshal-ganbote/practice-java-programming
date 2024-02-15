@@ -1,7 +1,12 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1.Lecture;
 
 public class PowerOfNumber {
 
+  /*
+   * Q Power function
+   * Implement power function using recursion.
+   * Given a, n compute a . n >= 0.
+   */
   static int computePowerOfNumber(int A, int N) {
 
     if (N == 0) {
@@ -12,12 +17,12 @@ public class PowerOfNumber {
   }
 
   public static void main(String[] args) {
+
     System.out.println();
-    System.out.println(
-        """
-            Q Power function
-            Implement power function using recursion.
-            Given a, n compute a . n >= 0.""");
+    System.out.println("""
+        Q Power function
+        Implement power function using recursion.
+        Given a, n compute a . n >= 0.""");
     System.out.println("-----------------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(N)");
@@ -32,5 +37,6 @@ public class PowerOfNumber {
     System.out.println("Output ->");
     System.out.println(computePowerOfNumber(2, 6));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

@@ -1,7 +1,12 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1.Lecture;
 
 public class PrintNumbers {
 
+  /*
+   * Q Increasing print
+   * Given a number N, print all numbers from 1 to N in increasing
+   * order using recursion.
+   */
   static void printIncreasingNumbers(int N) {
 
     if (N == 0) {
@@ -12,6 +17,11 @@ public class PrintNumbers {
     System.out.print(N + " ");
   }
 
+  /*
+   * Q Decreasing print
+   * Given a number N, print all numbers from N to 1 in decreasing
+   * order using recursion.
+   */
   static void printDecreasingNumbers(int N) {
 
     if (N == 0) {
@@ -65,5 +75,6 @@ public class PrintNumbers {
     printDecreasingNumbers(10);
     System.out.println();
     System.out.println("----------------------");
+    System.out.println();
   }
 }

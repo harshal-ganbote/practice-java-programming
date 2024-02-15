@@ -1,7 +1,12 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L22_Recursion_1.Lecture;
 
 public class CheckPalindrome {
 
+  /*
+   * Q Check Palindrome
+   * Given a string, check if it is palindrome using a
+   * recursive function.
+   */
   static boolean isPalindrome(String S, int index, int jIndex) {
 
     if (index >= jIndex) {
@@ -21,6 +26,8 @@ public class CheckPalindrome {
   }
 
   public static void main(String[] args) {
+
+    System.out.println();
     System.out.println("""
         Q Check Palindrome
         Given a string, check if it is palindrome using a
@@ -41,5 +48,6 @@ public class CheckPalindrome {
     System.out.println("Output ->");
     System.out.println(isPalindrome(str2));
     System.out.println("----------------------");
+    System.out.println();
   }
 }

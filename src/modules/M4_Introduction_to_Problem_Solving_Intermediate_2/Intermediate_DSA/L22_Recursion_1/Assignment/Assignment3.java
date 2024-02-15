@@ -38,7 +38,11 @@ public class Assignment3 {
 
   public static void main(String[] args) {
     String str1 = "naman", str2 = "strings";
+
+    System.out.println();
     System.out.println(solve(str1));
+    System.out.println("------");
     System.out.println(solve(str2));
+    System.out.println();
   }
 }
