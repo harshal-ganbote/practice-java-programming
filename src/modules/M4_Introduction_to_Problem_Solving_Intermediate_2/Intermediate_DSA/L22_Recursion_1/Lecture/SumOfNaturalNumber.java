@@ -18,7 +18,7 @@ public class SumOfNaturalNumber {
 
     System.out.println();
     System.out.println("Q Sum of first N natural numbers.");
-    System.out.println("-----------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");

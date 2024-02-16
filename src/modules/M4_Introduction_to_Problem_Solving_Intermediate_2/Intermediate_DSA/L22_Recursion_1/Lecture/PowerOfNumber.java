@@ -23,7 +23,7 @@ public class PowerOfNumber {
         Q Power function
         Implement power function using recursion.
         Given a, n compute a . n >= 0.""");
-    System.out.println("-----------------------------------------------------");
+    System.out.println("-------------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");

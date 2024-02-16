@@ -32,7 +32,7 @@ public class CheckPalindrome {
         Q Check Palindrome
         Given a string, check if it is palindrome using a
         recursive function.""");
-    System.out.println("-----------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     String str1 = "harsh";
     String str2 = "madam";
     System.out.println("Time Complexity -> O(N)");

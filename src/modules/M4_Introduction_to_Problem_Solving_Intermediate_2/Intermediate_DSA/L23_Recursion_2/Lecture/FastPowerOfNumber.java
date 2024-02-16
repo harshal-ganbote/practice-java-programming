@@ -45,7 +45,7 @@ public class FastPowerOfNumber {
         Q Power function
         Implement power function using recursion.
         Given a, n compute a^n. n >= 0.""");
-    System.out.println("-----------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(logN)");
     System.out.println("Space Complexity -> O(logN)");
     System.out.println("-----------------------------------");
@@ -66,7 +66,7 @@ public class FastPowerOfNumber {
         1 <= a <= 10^5
         0 <= n <= 10^6
         2 <= m <= 10^9""");
-    System.out.println("----------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(logN)");
     System.out.println("Space Complexity -> O(logN)");
     System.out.println("-----------------------------------");

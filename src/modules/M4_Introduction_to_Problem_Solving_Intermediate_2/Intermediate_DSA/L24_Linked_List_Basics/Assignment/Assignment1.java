@@ -1,7 +1,7 @@
 package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L24_Linked_List_Basics.Assignment;
 
-import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L24_Linked_List_Basics.LinkedList;
-import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L24_Linked_List_Basics.Node;
+import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L24_Linked_List_Basics.ListNode;
+import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L24_Linked_List_Basics.Lecture.LinkedList;
 
 public class Assignment1 {
 
@@ -19,8 +19,8 @@ public class Assignment1 {
    * 1 <= size of linked list <= 10^5
    * 1 <= value of nodes <= 10^9
    */
-  static void solve(Node A) {
-    Node temp = A;
+  static void solve(ListNode A) {
+    ListNode temp = A;
 
     while (temp != null) {
       System.out.print(temp.data + " ");
@@ -33,12 +33,13 @@ public class Assignment1 {
   public static void main(String[] args) {
     int[] arr1 = { 1, 2, 3 };
     int[] arr2 = { 4, 3, 2, 1 };
-    Node n1 = LinkedList.create(arr1);
-    Node n2 = LinkedList.create(arr2);
+    ListNode n1 = LinkedList.create(arr1);
+    ListNode n2 = LinkedList.create(arr2);
 
     System.out.println();
     solve(n1);
     System.out.println("-----------");
     solve(n2);
+    System.out.println();
   }
 }

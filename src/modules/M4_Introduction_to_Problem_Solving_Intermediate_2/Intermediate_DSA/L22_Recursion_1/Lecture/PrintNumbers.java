@@ -39,7 +39,7 @@ public class PrintNumbers {
         Q Increasing print
         Given a number N, print all numbers from 1 to N in increasing
         order using recursion.""");
-    System.out.println("----------------------------------------------------");
+    System.out.println("-------------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
@@ -59,7 +59,7 @@ public class PrintNumbers {
         Q Decreasing print
         Given a number N, print all numbers from N to 1 in decreasing
         order using recursion.""");
-    System.out.println("------------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");

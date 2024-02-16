@@ -40,5 +40,6 @@ public class Assignment3 {
     System.out.println("---------");
     System.out.println(a2.perimeter());
     System.out.println(a2.area());
+    System.out.println();
   }
 }
