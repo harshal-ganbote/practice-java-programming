@@ -2,6 +2,19 @@ package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_D
 
 public class Assignment1 {
 
+  /*
+   * Problem Description
+   * Implement pow(A, B) % C.
+   * In other words, given A, B and C, Find (A^B % C).
+   * Note: The remainders on division cannot be negative. In other words, make
+   * sure the answer you return is non-negative.
+   * 
+   * 
+   * Problem Constraints
+   * -10^9 <= A <= 10^9
+   * 0 <= B <= 10^9
+   * 1 <= C <= 10^9
+   */
   static int pow(int A, int B, int C) {
 
     if (B == 0) {
@@ -23,10 +36,13 @@ public class Assignment1 {
   }
 
   public static void main(String[] args) {
+
+    System.out.println();
     System.out.println(pow(2, 3, 3));
     System.out.println("-----");
     System.out.println(pow(3, 3, 1));
     System.out.println("-----");
     System.out.println(pow(-1, 1, 20));
+    System.out.println();
   }
 }
