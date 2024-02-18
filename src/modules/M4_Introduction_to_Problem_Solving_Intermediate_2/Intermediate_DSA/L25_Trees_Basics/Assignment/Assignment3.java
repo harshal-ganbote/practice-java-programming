@@ -3,6 +3,7 @@ package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_D
 import java.util.ArrayList;
 
 import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L25_Trees_Basics.TreeNode;
+import modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L25_Trees_Basics.Lecture.CreateBinaryTree;
 
 public class Assignment3 {
 
@@ -31,6 +32,15 @@ public class Assignment3 {
   }
 
   public static void main(String[] args) {
+    Integer[] arr1 = { 1, 3, 2 };
+    Integer[] arr2 = { 6, 1, 2, 3 };
+    TreeNode t1 = CreateBinaryTree.buildTreeFromArray(arr1);
+    TreeNode t2 = CreateBinaryTree.buildTreeFromArray(arr2);
 
+    System.out.println();
+    System.out.println(postOrderTraversal(t1));
+    System.out.println("------------");
+    System.out.println(postOrderTraversal(t2));
+    System.out.println();
   }
 }
