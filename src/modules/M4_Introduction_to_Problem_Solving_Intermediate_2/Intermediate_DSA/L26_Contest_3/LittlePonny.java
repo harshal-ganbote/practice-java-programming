@@ -4,6 +4,19 @@ import java.util.HashMap;
 
 public class LittlePonny {
 
+  /*
+   * Little Ponny and Palindromes
+   * Problem Description
+   * Given a string A consisting only of lowercase characters.
+   * You can swap any two characters of the string A any number of times, you have
+   * to check whether it is possible to convert the string A to a palindromic
+   * string.
+   * Return 1 if it is possible to else return 0.
+   * 
+   * 
+   * Problem Constraints
+   * 1 <= |A| <= 10^5
+   */
   static int solve(String A) {
     int N = A.length();
     HashMap<Character, Integer> hMap = new HashMap<>();
@@ -25,7 +38,6 @@ public class LittlePonny {
 
       if ((1 & hMap.get(key)) == 1) {
         oddCount++;
-
       }
     }
 
@@ -42,5 +54,6 @@ public class LittlePonny {
     System.out.println(solve("aabb"));
     System.out.println("--------");
     System.out.println(solve("aecbb"));
+    System.out.println();
   }
 }

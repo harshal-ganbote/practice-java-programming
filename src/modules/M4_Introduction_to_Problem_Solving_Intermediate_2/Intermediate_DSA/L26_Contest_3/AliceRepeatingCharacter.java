@@ -4,6 +4,24 @@ import java.util.HashMap;
 
 public class AliceRepeatingCharacter {
 
+  /*
+   * Alice and repeating character
+   * Problem Description
+   * Alice is a writer and she has written a story consisting of several
+   * Interesting incidents. She wants to make sure that she hasn't accidentally
+   * repeated any of
+   * the letters in her story. She wants to know the first letter that appears
+   * twice in the story.
+   * 
+   * Write a function that takes in the string A representing the story and
+   * returns the first letter that repeats in the string. If there are no such
+   * letters, return an empty string.
+   * Problem Constraints
+   * 
+   * 
+   * 1 <= A.length <= 10^5
+   * A contains only lowercase characters.
+   */
   static String solve(final String A) {
     HashMap<Character, Integer> hMap = new HashMap<>();
     String ans = "";
@@ -30,5 +48,6 @@ public class AliceRepeatingCharacter {
     System.out.println(solve("adbcb"));
     System.out.println("-----------");
     System.out.println(solve("cgcg"));
+    System.out.println();
   }
 }

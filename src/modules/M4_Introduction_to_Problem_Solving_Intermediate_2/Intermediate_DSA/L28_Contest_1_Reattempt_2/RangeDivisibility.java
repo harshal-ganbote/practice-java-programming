@@ -1,9 +1,30 @@
-package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.Contest_1_Reattempt_2;
+package modules.M4_Introduction_to_Problem_Solving_Intermediate_2.Intermediate_DSA.L28_Contest_1_Reattempt_2;
 
 import java.util.Arrays;
 
 public class RangeDivisibility {
 
+  /*
+   * Range divisibility
+   * Problem Description
+   * Samantha is a teacher who is teaching a group of students about divisibility
+   * by 7. To make the lesson more interesting, she gives them an array A of size
+   * N and asks them Q queries given by B.
+   * 
+   * In each query, she gives them a range from L to R given by B[i][0] and
+   * B[i][1] and asks them to find the count of numbers divisible by 7 in sub
+   * array
+   * A[L], A[L+1], ... A[R]. Since some students are struggling to solve the
+   * problem, Samantha asks for your
+   * help to come up with a solution.
+   * 
+   * 
+   * Problem Constraints
+   * 1 <= N <= 10^5
+   * 1 <= Q <= 10^5
+   * 1 <=A[i] <= 10^9
+   * 0 <= B[i][0], B[i][1] <N
+   */
   static int[] solve(int[] A, int[][] B) {
     int N = A.length;
     int M = B.length;
@@ -38,5 +59,6 @@ public class RangeDivisibility {
     System.out.println(Arrays.toString(solve(arr1, arrB1)));
     System.out.println("----------");
     System.out.println(Arrays.toString(solve(arr2, arrB2)));
+    System.out.println();
   }
 }
