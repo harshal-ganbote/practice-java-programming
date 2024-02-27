@@ -55,12 +55,11 @@ public class SumInRange {
     int[][] Q = { { 1, 3 }, { 0, 4 }, { 2, 7 } };
 
     System.out.println();
-    System.out.println(
-        """
-            Q Given N array elements & Q queries on same array.For each query
-            calculate sum of all elements in given range -
-            [L, R]Note: L & R are indices such that L <= R 51 !<= N, Q !<= 10""");
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("""
+        Q Given N array elements & Q queries on same array.For each query
+        calculate sum of all elements in given range -
+        [L, R]Note: L & R are indices such that L <= R 51 !<= N, Q !<= 10""");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(Q*N)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
@@ -68,7 +67,7 @@ public class SumInRange {
     System.out.println(Arrays.toString(arr));
     System.out.println("Output ->");
     System.out.println(Arrays.toString(calculateSumInRangeBruteForce(arr, Q)));
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Time Complexity -> O(Q+N)");
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
@@ -78,6 +77,5 @@ public class SumInRange {
     System.out.println(Arrays.toString(calculateSumInRangeOptimized(arr, Q)));
     System.out.println("----------------------");
     System.out.println();
-
   }
 }

@@ -12,6 +12,7 @@ public class MyHashMap<K, V> {
   private ArrayList<MyHashMapNode>[] buckets;
   private int size = 0;
 
+  @SuppressWarnings("unchecked")
   public MyHashMap() {
     buckets = new ArrayList[7];
 
@@ -116,6 +117,7 @@ public class MyHashMap<K, V> {
     return get(key);
   }
 
+  @SuppressWarnings("unchecked")
   private void reHashing() {
     ArrayList<MyHashMapNode>[] oldBuckets = buckets;
 
