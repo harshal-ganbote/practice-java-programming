@@ -43,6 +43,7 @@ public class CountFactor {
   }
 
   public static void main(String[] args) {
+
     System.out.println();
     System.out.println("Q Count of factors Given a number N, count its factors.");
     System.out.println("--------------------------------------------");

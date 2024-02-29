@@ -36,6 +36,7 @@ public class PrimeNumber {
   }
 
   public static void main(String[] args) {
+
     System.out.println();
     System.out.println("Q Prime Check Given N, check if it is a prime number.");
     System.out.println("--------------------------------------------");

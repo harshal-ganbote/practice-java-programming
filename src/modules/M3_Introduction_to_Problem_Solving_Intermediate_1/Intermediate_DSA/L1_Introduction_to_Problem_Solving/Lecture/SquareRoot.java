@@ -29,6 +29,7 @@ public class SquareRoot {
   }
 
   public static void main(String[] args) {
+
     System.out.println();
     System.out.println("Q Given a number N, find its square root.");
     System.out.println("----------------------------------------------------------------");
