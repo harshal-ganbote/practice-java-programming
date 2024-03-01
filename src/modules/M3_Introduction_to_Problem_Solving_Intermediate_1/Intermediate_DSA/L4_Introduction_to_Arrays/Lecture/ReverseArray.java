@@ -67,7 +67,6 @@ public class ReverseArray {
     System.out.println("Output ->");
     System.out.println(Arrays.toString(reverseArray(arr2)));
     System.out.println("----------------------");
-
     System.out.println("""
         Q Given an array , and [S & E],
         reverse the array from [S E], where S and E are indices.
