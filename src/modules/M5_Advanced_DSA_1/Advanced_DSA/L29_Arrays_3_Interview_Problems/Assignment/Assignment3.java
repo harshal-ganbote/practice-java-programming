@@ -1,4 +1,4 @@
-package modules.M5_Advanced_DSA_1.Advanced_DSA.L24_Arrays_3_Interview_Problems.Assignment;
+package modules.M5_Advanced_DSA_1.Advanced_DSA.L29_Arrays_3_Interview_Problems.Assignment;
 
 public class Assignment3 {
 

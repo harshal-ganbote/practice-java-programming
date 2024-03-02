@@ -1,4 +1,4 @@
-package modules.M5_Advanced_DSA_1.Advanced_DSA.L23_Arrays_2_Two_Dimensional.Assignment;
+package modules.M5_Advanced_DSA_1.Advanced_DSA.L28_Arrays_2_Two_Dimensional.Assignment;
 
 public class Assignment1 {
 

@@ -40,6 +40,5 @@ public class Assignment1 {
     System.out.println("-----------");
     System.out.println(maxSubArray(arr2));
     System.out.println();
-
   }
 }

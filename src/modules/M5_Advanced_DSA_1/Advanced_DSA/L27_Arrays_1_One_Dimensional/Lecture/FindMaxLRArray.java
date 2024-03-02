@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 public class FindMaxLRArray {
 
+  /*
+   * Q Given arr[N]. create left Max and Right Max Array.
+   * LMax[i] -> max of all elements from 0 to i.
+   * RMax -> max of all elements from i to N-1.
+   */
   static int[] findLeftMaxArray(int[] A) {
     int N = A.length;
     int[] lMax = new int[N];
@@ -34,8 +39,20 @@ public class FindMaxLRArray {
     int[] arr = { 1, -6, 3, 8, 4, 5, 2 };
 
     System.out.println();
+    System.out.println("""
+        Q Given arr[N]. create left Max and Right Max Array.
+        LMax[i] -> max of all elements from 0 to i.
+        RMax -> max of all elements from i to N-1.""");
+    System.out.println("--------------------------------------------------");
+    System.out.println("Time Complexity -> O(N)");
+    System.out.println("Space Complexity -> O(1)");
+    System.out.println("-----------------------------------");
+    System.out.println("Input Array ->");
+    System.out.println(Arrays.toString(arr));
+    System.out.println("Output ->");
     System.out.println(Arrays.toString(findLeftMaxArray(arr)));
-    System.out.println("----------");
     System.out.println(Arrays.toString(findRightMaxArray(arr)));
+    System.out.println("-----------------------");
+    System.out.println();
   }
 }

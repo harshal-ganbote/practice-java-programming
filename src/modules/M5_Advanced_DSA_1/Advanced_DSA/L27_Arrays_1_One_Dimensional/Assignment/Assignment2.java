@@ -52,5 +52,6 @@ public class Assignment2 {
 
     System.out.println();
     System.out.println(Arrays.toString(solve(5, arrB)));
+    System.out.println();
   }
 }

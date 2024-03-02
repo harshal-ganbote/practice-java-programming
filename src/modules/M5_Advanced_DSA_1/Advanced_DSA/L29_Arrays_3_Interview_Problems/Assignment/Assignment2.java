@@ -1,9 +1,9 @@
-package modules.M5_Advanced_DSA_1.Advanced_DSA.L24_Arrays_3_Interview_Problems.Assignment;
+package modules.M5_Advanced_DSA_1.Advanced_DSA.L29_Arrays_3_Interview_Problems.Assignment;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import modules.M5_Advanced_DSA_1.Advanced_DSA.L24_Arrays_3_Interview_Problems.Lecture.Interval;
+import modules.M5_Advanced_DSA_1.Advanced_DSA.L29_Arrays_3_Interview_Problems.Lecture.Interval;
 
 public class Assignment2 {
 
