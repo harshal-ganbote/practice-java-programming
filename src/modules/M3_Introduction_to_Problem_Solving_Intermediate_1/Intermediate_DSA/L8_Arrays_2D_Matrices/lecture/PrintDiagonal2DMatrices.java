@@ -1,6 +1,6 @@
 package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L8_Arrays_2D_Matrices.lecture;
 
-import java.util.Arrays;
+import modules.App;
 
 public class PrintDiagonal2DMatrices {
 
@@ -19,13 +19,6 @@ public class PrintDiagonal2DMatrices {
     }
 
     System.out.println();
-  }
-
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
   }
 
   static void printRightDiagonalElements(int[][] A) {
@@ -85,7 +78,7 @@ public class PrintDiagonal2DMatrices {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat1);
+    App.print2DArray(mat1);
     System.out.println("----------------");
     System.out.println("1 -> Left Diagonal");
     System.out.println("Output ->");
@@ -101,7 +94,7 @@ public class PrintDiagonal2DMatrices {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat2);
+    App.print2DArray(mat2);
     System.out.println("Output ->");
     printRtoLDiagonalElements(mat2);
     System.out.println();

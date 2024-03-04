@@ -1,6 +1,6 @@
 package modules.M8_Advanced_DSA_4.Advanced_DSA.L5_DP_2_two_dimentional.Lecture;
 
-import java.util.Arrays;
+import modules.App;
 
 public class DungeonsAndPrincess {
 
@@ -67,13 +67,6 @@ public class DungeonsAndPrincess {
     return findMinHealth(A, 0, 0, dp);
   }
 
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
-  }
-
   public static void main(String[] args) {
     int[][] mat1 = { { -3, 2, 4, -5 }, { -6, 5, -4, 6 }, { -15, -7, 5, -2 }, { 2, 10, -3, -4 } };
     int[][] mat2 = { { -2, -8, 100 }, { -1, -3, 1 } };
@@ -91,12 +84,12 @@ public class DungeonsAndPrincess {
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat1);
+    App.print2DArray(mat1);
     System.out.println("Output ->");
     System.out.println(findMinHealthTopDown(mat1));
     System.out.println("--------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat2);
+    App.print2DArray(mat2);
     System.out.println("Output ->");
     System.out.println(findMinHealthTopDown(mat2));
     System.out.println("--------------------------");
@@ -105,12 +98,12 @@ public class DungeonsAndPrincess {
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat1);
+    App.print2DArray(mat1);
     System.out.println("Output ->");
     System.out.println(findMinHealthBottomUp(mat1));
     System.out.println("--------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat2);
+    App.print2DArray(mat2);
     System.out.println("Output ->");
     System.out.println(findMinHealthBottomUp(mat2));
     System.out.println("--------------------------");

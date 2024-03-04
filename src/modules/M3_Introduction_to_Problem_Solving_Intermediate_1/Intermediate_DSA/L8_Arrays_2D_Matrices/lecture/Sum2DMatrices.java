@@ -1,6 +1,6 @@
 package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L8_Arrays_2D_Matrices.lecture;
 
-import java.util.Arrays;
+import modules.App;
 
 public class Sum2DMatrices {
 
@@ -40,13 +40,6 @@ public class Sum2DMatrices {
     return maxSum;
   }
 
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
-  }
-
   public static void main(String[] args) {
     int[][] mat1 = { { 3, 8, 9, 2 }, { 1, 2, 3, 6 }, { 4, 10, 11, 17 } };
     int[][] mat2 = { { 3, 8, 9, 2 }, { 1, 2, 3, 6 }, { 4, 10, 11, 8 } };
@@ -58,7 +51,7 @@ public class Sum2DMatrices {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat1);
+    App.print2DArray(mat1);
     System.out.println("Output ->");
     printRowWiseSum(mat1);
     System.out.println("----------------------------------------------------");
@@ -68,7 +61,7 @@ public class Sum2DMatrices {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat1);
+    App.print2DArray(mat1);
     System.out.println("Output ->");
     System.out.println(findMaxColumnWiseSum(mat2));
     System.out.println();

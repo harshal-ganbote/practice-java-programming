@@ -1,6 +1,6 @@
 package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L9_Arrays_Sliding_Window.Lecture;
 
-import java.util.Arrays;
+import modules.App;
 
 public class PrintSpiralForm {
 
@@ -49,13 +49,6 @@ public class PrintSpiralForm {
     System.out.println();
   }
 
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
-  }
-
   public static void main(String[] args) {
     int[][] mat1 = { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 },
         { 16, 17, 18, 19, 20 }, { 21, 22, 23, 24, 25 } };
@@ -69,12 +62,12 @@ public class PrintSpiralForm {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("---------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat1);
+    App.print2DArray(mat1);
     System.out.println("Output ->");
     printSpiralForm(mat1);
     System.out.println("---------------------------");
     System.out.println("Input Array ->");
-    print2DArray(mat2);
+    App.print2DArray(mat2);
     System.out.println("Output ->");
     printSpiralForm(mat2);
     System.out.println("---------------------------");

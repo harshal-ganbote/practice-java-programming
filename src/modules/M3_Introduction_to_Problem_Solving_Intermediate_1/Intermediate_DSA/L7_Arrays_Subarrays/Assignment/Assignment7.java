@@ -1,6 +1,6 @@
 package modules.M3_Introduction_to_Problem_Solving_Intermediate_1.Intermediate_DSA.L7_Arrays_Subarrays.Assignment;
 
-import java.util.Arrays;
+import modules.App;
 
 public class Assignment7 {
 
@@ -39,21 +39,14 @@ public class Assignment7 {
     return ans;
   }
 
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
-  }
-
   public static void main(String[] args) {
     int[] arr1 = { 1, 2, 3 };
     int[] arr2 = { 5, 2, 1, 4 };
 
     System.out.println();
-    print2DArray(solve(arr1));
+    App.print2DArray(solve(arr1));
     System.out.println("------------------");
-    print2DArray(solve(arr2));
+    App.print2DArray(solve(arr2));
     System.out.println();
   }
 

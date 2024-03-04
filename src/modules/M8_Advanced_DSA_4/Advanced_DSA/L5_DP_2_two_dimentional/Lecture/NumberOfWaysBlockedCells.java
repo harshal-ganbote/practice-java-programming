@@ -1,6 +1,6 @@
 package modules.M8_Advanced_DSA_4.Advanced_DSA.L5_DP_2_two_dimentional.Lecture;
 
-import java.util.Arrays;
+import modules.App;
 
 public class NumberOfWaysBlockedCells {
 
@@ -90,13 +90,6 @@ public class NumberOfWaysBlockedCells {
     return findNumberOfWaysBlockedCells(A, N - 1, M - 1, dp);
   }
 
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
-  }
-
   public static void main(String[] args) {
     int[][] mat = { { 1, 1, 1, 1 }, { 1, 0, 1, 0 }, { 1, 1, 1, 1 }, { 1, 1, 1, 1 }, { 1, 0, 1, 1 } };
 
@@ -113,7 +106,7 @@ public class NumberOfWaysBlockedCells {
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
     System.out.println("Input Matrix ->");
-    print2DArray(mat);
+    App.print2DArray(mat);
     System.out.println("Output ->");
     System.out.println(findNumberOfWaysBlockedCellsTopDown(mat));
     System.out.println("--------------------------");
@@ -122,7 +115,7 @@ public class NumberOfWaysBlockedCells {
     System.out.println("Space Complexity -> O(N)");
     System.out.println("-----------------------------------");
     System.out.println("Input Matrix ->");
-    print2DArray(mat);
+    App.print2DArray(mat);
     System.out.println("Output ->");
     System.out.println(findNumberOfWaysBlockedCellsBottomUp(mat));
     System.out.println("--------------------------");

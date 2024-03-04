@@ -2,6 +2,8 @@ package modules.M5_Advanced_DSA_1.Advanced_DSA.L27_Arrays_1_One_Dimensional.Lect
 
 import java.util.Arrays;
 
+import modules.App;
+
 public class BaggersProblem {
 
   /*
@@ -57,13 +59,6 @@ public class BaggersProblem {
     return ans;
   }
 
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
-  }
-
   public static void main(String[] args) {
     int[][] arrB1 = { { 3, 4 }, { 1, 3 }, { 4, -2 }, { 3, 1 } };
     int[][] arrB2 = { { 3, 6, 3 }, { 2, 7, -3 }, { 1, 9, 4 } };
@@ -79,7 +74,7 @@ public class BaggersProblem {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(arrB1);
+    App.print2DArray(arrB1);
     System.out.println("Output ->");
     System.out.println(Arrays.toString(zeroQueriesI(5, arrB1)));
     System.out.println("-----------------------------------");
@@ -93,7 +88,7 @@ public class BaggersProblem {
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");
     System.out.println("Input Array ->");
-    print2DArray(arrB2);
+    App.print2DArray(arrB2);
     System.out.println("Output ->");
     System.out.println(Arrays.toString(zeroQueriesII(10, arrB2)));
     System.out.println("-----------------------------------");

@@ -1,6 +1,6 @@
 package modules.M5_Advanced_DSA_1.Advanced_DSA.L29_Arrays_3_Interview_Problems.Lecture;
 
-import java.util.Arrays;
+import modules.App;
 
 public class CheckElementInMatrix {
 
@@ -41,13 +41,6 @@ public class CheckElementInMatrix {
     return false;
   }
 
-  static void print2DArray(int[][] A) {
-
-    for (int[] arr : A) {
-      System.out.println(Arrays.toString(arr));
-    }
-  }
-
   public static void main(String[] args) {
     int[][] arr = { { -1, 2, 4, 5, 9, 11 }, { 1, 4, 7, 8, 10, 14 },
         { 3, 7, 9, 10, 12, 18 }, { 6, 10, 12, 14, 16, 20 },
@@ -65,7 +58,7 @@ public class CheckElementInMatrix {
         Check if element k is there or not""");
     System.out.println("------------------------------------------------------");
     System.out.println("Input Matrix ->");
-    print2DArray(arr);
+    App.print2DArray(arr);
     System.out.println("-------------------------------------");
     System.out.println("There are following approach Please Select One");
     System.out.println("1 -> Brute force approach");
