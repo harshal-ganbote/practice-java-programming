@@ -47,16 +47,10 @@ public class CheckElementInMatrix {
         { 11, 15, 19, 21, 24, 27 }, { 18, 24, 29, 32, 34, 42 } };
 
     System.out.println();
-    System.out.println(checkElementKInMatrixOptimized(arr, 15));
-    System.out.println("------");
-    System.out.println(checkElementKInMatrixOptimized(arr, 13));
-    System.out.println();
-
-    System.out.println();
     System.out.println("""
         Q Sorted 2D matrix (row wise and col wise sorted )
         Check if element k is there or not""");
-    System.out.println("------------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("Input Matrix ->");
     App.print2DArray(arr);
     System.out.println("-------------------------------------");

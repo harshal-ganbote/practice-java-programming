@@ -1,0 +1,38 @@
+package modules.M5_Advanced_DSA_1.Advanced_DSA.L30_Bit_Manipulation_Problems.Assignment;
+
+public class Assignment3 {
+
+  /*
+   * Problem Description
+   * Given an array of integers A, every element appears twice except for one.
+   * Find that integer that occurs once.
+   * 
+   * NOTE: Your algorithm should have a linear runtime complexity. Could you
+   * implement it without using extra memory?
+   * 
+   * 
+   * Problem Constraints
+   * 1 <= |A| <= 2000000
+   * 0 <= A[i] <= INTMAX
+   */
+  static int singleNumber(final int[] A) {
+    int ans = 0;
+
+    for (int num : A) {
+      ans ^= num;
+    }
+
+    return ans;
+  }
+
+  public static void main(String[] args) {
+    int[] arr1 = { 1, 2, 2, 3, 1 };
+    int[] arr2 = { 1, 2, 2 };
+
+    System.out.println();
+    System.out.println(singleNumber(arr1));
+    System.out.println("-------");
+    System.out.println(singleNumber(arr2));
+    System.out.println();
+  }
+}
