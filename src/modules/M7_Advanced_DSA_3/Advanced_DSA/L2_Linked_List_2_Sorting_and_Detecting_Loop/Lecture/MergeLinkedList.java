@@ -4,32 +4,33 @@ import modules.M7_Advanced_DSA_3.Advanced_DSA.ListNode;
 
 public class MergeLinkedList {
 
-  static ListNode mergeLinkedList(ListNode l1, ListNode l2) {
-    ListNode temp = new ListNode(0);
-    ListNode ans = temp;
+  static ListNode mergeLinkedList(ListNode head1, ListNode head2) {
+    ListNode dummy = new ListNode(-1);
+    ListNode cur = dummy, h1 = head1, h2 = head2;
 
-    while (l1 != null && l2 != null) {
+    while (h1 != null && h2 != null) {
 
-      if (l1.val <= l2.val) {
-        temp.next = l1;
-        l1 = l1.next;
+      if (h1.val <= h2.val) {
+        cur.next = h1;
+        h1 = h1.next;
       } else {
-        temp.next = l2;
-        l2 = l2.next;
+        cur.next = h2;
+        h2 = h2.next;
       }
-      temp = temp.next;
+      cur = cur.next;
 
     }
 
-    if (l1 != null) {
-      temp.next = l1;
+    if (h1 == null) {
+      cur.next = h2;
+    } else {
+      cur.next = h1;
     }
 
-    if (l2 != null) {
-      temp.next = l2;
-    }
+    ListNode head = dummy.next;
+    dummy.next = null;
 
-    return ans.next;
+    return head;
   }
 
   public static void main(String[] args) {
@@ -40,7 +41,7 @@ public class MergeLinkedList {
 
     System.out.println();
     System.out.println("Q Given a Linked List, find the middle element.");
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("---------------------------------------------------");
     System.out.println("Time Complexity -> O(N + M)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");

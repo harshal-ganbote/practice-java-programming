@@ -5,13 +5,18 @@ import modules.M7_Advanced_DSA_3.Advanced_DSA.ListNode;
 public class MiddleOfLinkedList {
 
   /*
-   * Q Given a Linked List, find the middle element.
+   * Q Given a Linked List, find the middle element of linked list.
    */
   static ListNode findMiddleOfLinkedList(ListNode head) {
+
+    if (head == null) {
+      return null;
+    }
+
     ListNode slowP = head;
     ListNode fastP = head;
 
-    while (fastP != null && fastP.next != null) {
+    while (fastP.next != null && fastP.next.next != null) {
       slowP = slowP.next;
       fastP = fastP.next.next;
     }
@@ -26,8 +31,8 @@ public class MiddleOfLinkedList {
     ListNode h2 = ListNode.create(arr2);
 
     System.out.println();
-    System.out.println("Q Given a Linked List, find the middle element.");
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("Q Given a Linked List, find the middle element of linked list.");
+    System.out.println("---------------------------------------------------");
     System.out.println("Time Complexity -> O(N)");
     System.out.println("Space Complexity -> O(1)");
     System.out.println("-----------------------------------");

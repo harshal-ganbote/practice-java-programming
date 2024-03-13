@@ -22,6 +22,35 @@ public class ListNode {
     return head;
   }
 
+  public static ListNode create(int[] A, int B) {
+    ListNode head = new ListNode(A[0]);
+    ListNode temp = head;
+    int N = A.length;
+
+    for (int index = 1; index < N; index++) {
+      temp.next = new ListNode(A[index]);
+      temp = temp.next;
+    }
+
+    temp.next = searchListNode(head, B);
+
+    return head;
+  }
+
+  public static ListNode searchListNode(ListNode head, int position) {
+
+    if (head == null) {
+      return null;
+    }
+
+    ListNode temp = head;
+    for (int link = 1; link < position; link++) {
+      temp = temp.next;
+    }
+
+    return temp;
+  }
+
   public static void print(ListNode head) {
     ListNode temp = head;
 
