@@ -4,6 +4,9 @@ import modules.M7_Advanced_DSA_3.Advanced_DSA.ListNode;
 
 public class MergeLinkedList {
 
+  /*
+   * Q Given 2 sorted linked list merge them into a single sorted LL.
+   */
   static ListNode mergeLinkedList(ListNode head1, ListNode head2) {
     ListNode dummy = new ListNode(-1);
     ListNode cur = dummy, h1 = head1, h2 = head2;
@@ -40,7 +43,7 @@ public class MergeLinkedList {
     ListNode h2 = ListNode.create(arr2);
 
     System.out.println();
-    System.out.println("Q Given a Linked List, find the middle element.");
+    System.out.println("Q Given 2 sorted linked list merge them into a single sorted LL.");
     System.out.println("---------------------------------------------------");
     System.out.println("Time Complexity -> O(N + M)");
     System.out.println("Space Complexity -> O(1)");

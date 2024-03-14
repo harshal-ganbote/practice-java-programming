@@ -3,10 +3,12 @@ package modules.M7_Advanced_DSA_3.Advanced_DSA;
 public class ListNode {
   public int val;
   public ListNode next;
+  public boolean isStarting;
 
   public ListNode(int val) {
     this.val = val;
     this.next = null;
+    isStarting = false;
   }
 
   public static ListNode create(int[] A) {
@@ -33,6 +35,7 @@ public class ListNode {
     }
 
     temp.next = searchListNode(head, B);
+    temp.isStarting = true;
 
     return head;
   }
@@ -60,6 +63,21 @@ public class ListNode {
     }
 
     System.out.print(temp.val + " -> null");
+    System.out.println();
+  }
+
+  public static void printCycle(ListNode head) {
+    ListNode temp = head;
+
+    while (temp != null) {
+      System.out.print(temp.val + " -> ");
+      temp = temp.next;
+      if (temp.isStarting) {
+        System.out.print(temp.val + " => " + temp.next.val);
+        break;
+      }
+    }
+
     System.out.println();
   }
 

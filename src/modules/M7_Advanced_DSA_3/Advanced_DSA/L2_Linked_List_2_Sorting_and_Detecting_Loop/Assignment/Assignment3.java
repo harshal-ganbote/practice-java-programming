@@ -54,6 +54,17 @@ public class Assignment3 {
   }
 
   public static void main(String[] args) {
+    int[] arr1 = { 5, 8, 20 };
+    int[] arr2 = { 4, 11, 15 };
+    int[] arr3 = { 1, 2, 3 };
+    ListNode h1 = ListNode.create(arr1);
+    ListNode h2 = ListNode.create(arr2);
+    ListNode h3 = ListNode.create(arr3);
 
+    System.out.println();
+    ListNode.print(mergeTwoLists(h1, h2));
+    System.out.println("--------------");
+    ListNode.print(mergeTwoLists(h3, null));
+    System.out.println();
   }
 }

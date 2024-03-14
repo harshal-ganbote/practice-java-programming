@@ -44,6 +44,15 @@ public class Assignment2 {
   }
 
   public static void main(String[] args) {
+    int[] arr1 = { 1, 2, 3, 4, 5 };
+    int[] arr2 = { 1, 5, 6, 2, 3, 4 };
+    ListNode h1 = ListNode.create(arr1);
+    ListNode h2 = ListNode.create(arr2);
 
+    System.out.println();
+    System.out.println(solve(h1));
+    System.out.println("----------");
+    System.out.println(solve(h2));
+    System.out.println();
   }
 }

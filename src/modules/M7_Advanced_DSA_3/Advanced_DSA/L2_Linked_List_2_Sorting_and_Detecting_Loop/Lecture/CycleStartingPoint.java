@@ -4,6 +4,9 @@ import modules.M7_Advanced_DSA_3.Advanced_DSA.ListNode;
 
 public class CycleStartingPoint {
 
+  /*
+   * Q If a loop exists, find starting point of the loop.
+   */
   static ListNode findStatingPointOfCycle(ListNode head) {
 
     if (head == null) {
@@ -38,6 +41,20 @@ public class CycleStartingPoint {
   }
 
   public static void main(String[] args) {
+    int[] arr1 = { 1, 4, 3, 6, 9, 8 };
+    ListNode h1 = ListNode.create(arr1, 3);
 
+    System.out.println();
+    System.out.println("Q If a loop exists, find starting point of the loop.");
+    System.out.println("---------------------------------------------------");
+    System.out.println("Time Complexity -> O(N)");
+    System.out.println("Space Complexity -> O(1)");
+    System.out.println("-----------------------------------");
+    System.out.println("Input Linked List ->");
+    ListNode.printCycle(h1);
+    System.out.println("Output ->");
+    System.out.println(findStatingPointOfCycle(h1).val);
+    System.out.println("-------------------------");
+    System.out.println();
   }
 }
