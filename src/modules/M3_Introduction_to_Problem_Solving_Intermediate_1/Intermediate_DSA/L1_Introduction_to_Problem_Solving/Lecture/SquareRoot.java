@@ -32,7 +32,7 @@ public class SquareRoot {
 
     System.out.println();
     System.out.println("Q Given a number N, find its square root.");
-    System.out.println("----------------------------------------------------------------");
+    System.out.println("--------------------------------------------------");
     System.out.println("There are following approach");
     System.out.println("1 -> Number is Perfect Square");
     System.out.println("Time Complexity -> O(Sqrt(N))");
