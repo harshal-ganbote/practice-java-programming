@@ -4,6 +4,9 @@ import modules.M7_Advanced_DSA_3.Advanced_DSA.ListNode;
 
 public class OddLengthPalindromic {
 
+  /*
+   * Q Find length of longest odd length palindromic list in a given linked list.
+   */
   static int findOddLengthPalindromic(ListNode head) {
     ListNode prev = null;
     ListNode cur = head;
@@ -26,7 +29,7 @@ public class OddLengthPalindromic {
     ListNode p1 = prev, p2 = fur;
 
     while (p1 != null && p2 != null) {
-      if (p1.val == p1.val) {
+      if (p1.val == p2.val) {
         ans += 2;
       } else {
         break;
@@ -44,7 +47,22 @@ public class OddLengthPalindromic {
     ListNode h1 = ListNode.create(arr1);
     ListNode h2 = ListNode.create(arr2);
 
+    System.out.println();
+    System.out.println("Q Find length of longest odd length palindromic list in a given linked list.");
+    System.out.println("---------------------------------------------------");
+    System.out.println("Time Complexity -> O(N^2)");
+    System.out.println("Space Complexity -> O(1)");
+    System.out.println("-----------------------------------");
+    System.out.println("Input Linked List ->");
+    ListNode.print(h1);
+    System.out.println("Output ->");
     System.out.println(findOddLengthPalindromic(h1));
+    System.out.println("----------------------");
+    System.out.println("Input Linked List ->");
+    ListNode.print(h2);
+    System.out.println("Output ->");
     System.out.println(findOddLengthPalindromic(h2));
+    System.out.println("----------------------");
+    System.out.println();
   }
 }
