@@ -28,6 +28,20 @@ public class DoublyListNode {
     return item;
   }
 
+  public static DoublyListNode searchNode(DoublyListNode head, int pos) {
+
+    if (head == null) {
+      return head;
+    }
+    DoublyListNode temp = head;
+
+    for (int index = 1; index < pos; index++) {
+      temp = temp.next;
+    }
+
+    return temp;
+  }
+
   public static void print(DoublyListNode head) {
     DoublyListNode temp = head;
 
