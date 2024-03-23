@@ -24,6 +24,8 @@ public class RotateArray {
 
   static void rotateArrayKTimes(int[] A, int k) {
     int N = A.length;
+    k = k % N;
+
     reverseArray(A, 0, N - 1);
     reverseArray(A, 0, k - 1);
     reverseArray(A, k, N - 1);
