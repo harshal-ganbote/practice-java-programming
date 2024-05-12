@@ -24,7 +24,10 @@ CREATE TABLE students(
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   batch_id INT,
-  FOREIGN KEY(batch_id) REFERENCES batches(id) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY(batch_id) REFERENCES batches(id) ON DELETE RESTRICT ON UPDATE RESTRICT -- ON DELETE CASCADE
+  -- ON UPDATE CASCADE
+  -- ON DELETE SET NULL
+  -- ON UPDATE SET NULL
 );
 --
 -- Insert data into student tables 
