@@ -3,7 +3,8 @@ use sakila;
 --
 SELECT *
 FROM film
-WHERE release_year>=2020 AND release_year<=2030;
+WHERE release_year >= 2020
+  AND release_year <= 2030;
 --
 --
 SELECT *
@@ -34,7 +35,8 @@ WHERE title LIKE "%AIR%";
 -- Find out all films which contain the any word starting with "AIR" inside film name
 SELECT *
 FROM film
-WHERE title LIKE "%AIR%" OR title LIKE "% AIR%";
+WHERE title LIKE "%AIR%"
+  OR title LIKE "% AIR%";
 --
 --
 -- Find out all the movies ending with "Lane"
@@ -57,16 +59,17 @@ WHERE title LIKE BINARY "%PORT";
 -- _ example
 SELECT *
 FROM film
-WHERE title LIKE  "%P_T";
+WHERE title LIKE "%P_T";
 --
 --
 -- = NULL doesn't work instead use IS NULL
 SELECT *
 FROM address
-WHERE address2 IS NULL OR address2="";
+WHERE address2 IS NULL
+  OR address2 = "";
 --
 --
--- !=NULL doesnt work instead IS NOT NULL
+-- !=NULL doesn't work instead IS NOT NULL
 SELECT *
 FROM address
 WHERE address2 IS NOT NULL;
@@ -82,13 +85,13 @@ WHERE description IS NULL;
 -- Default Ordering: Primary Key Ascending
 SELECT *
 FROM film
-WHERE release_year>=2020
+WHERE release_year >= 2020
 ORDER BY title;
 --
 --
 SELECT *
 FROM film
-WHERE release_year>=2020
+WHERE release_year >= 2020
 ORDER BY title DESC;
 --
 --
@@ -96,8 +99,9 @@ ORDER BY title DESC;
 -- Order of Execution: Filtering --> Sorting --> Limit --> Printing
 SELECT *
 FROM film
-WHERE release_year>=2020
-ORDER BY release_year ASC, title DESC
+WHERE release_year >= 2020
+ORDER BY release_year ASC,
+  title DESC
 LIMIT 3;
 --
 --
@@ -132,26 +136,28 @@ SET description = "A great movie"
 WHERE description IS NULL;
 --
 --
-SELECT * FROM film
-WHERE description="A great movie";
+SELECT *
+FROM film
+WHERE description = "A great movie";
 --
 --
 -- Update Multiple Cols
 UPDATE film
-SET release_year=2011,
-rating='PG'
-WHERE film_id=1;
+SET release_year = 2011,
+  rating = 'PG'
+WHERE film_id = 1;
 --
 --
-SELECT * FROM film
-WHERE film_id=1;
+SELECT *
+FROM film
+WHERE film_id = 1;
 --
 --
-SET SQL_SAFE_UPDATES=0;
+SET SQL_SAFE_UPDATES = 0;
 --
 --
 UPDATE film
-SET release_year=2007;
+SET release_year = 2007;
 --
 --
 -- Delete : Delete vs Truncate vs Drop
@@ -161,7 +167,7 @@ FROM film;
 --
 --
 DELETE FROM film
-WHERE film_id=1005;
+WHERE film_id = 1005;
 --
 --
 -- Truncate And DROP to clear the entire table
@@ -174,6 +180,7 @@ TRUNCATE students;
 -- all rows are delete but students as a empty table still exists
 -- Truncate delete the entire table and then re-creates the structure, so for deleting all rows truncate will be faster
 -- Once you truncate, no rollback is possible
-DROP TABLE students; -- remove the complete table including the structure, child table
-DROP TABLE batches;  -- parent table
-
+DROP TABLE students;
+-- remove the complete table including the structure, child table
+DROP TABLE batches;
+-- parent table
