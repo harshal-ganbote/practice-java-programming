@@ -115,6 +115,6 @@ FROM orders o
 -- Show each actor name with film name he/she has done
 SELECT CONCAT(a.first_name, " ", a.last_name) AS actor_name,
   f.title AS film_name
-FROM actor a
-  JOIN film_actor af ON a.actor_id = af.actor_id
+FROM film_actor af
+  JOIN actor a ON af.actor_id = a.actor_id
   JOIN film f ON af.film_id = f.film_id;
