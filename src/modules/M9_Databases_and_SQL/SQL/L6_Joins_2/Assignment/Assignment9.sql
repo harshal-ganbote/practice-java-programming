@@ -1,0 +1,6 @@
+SELECT DISTINCT *
+FROM Customers1
+UNION
+SELECT *
+FROM Customers2
+ORDER BY customer_name DESC;
