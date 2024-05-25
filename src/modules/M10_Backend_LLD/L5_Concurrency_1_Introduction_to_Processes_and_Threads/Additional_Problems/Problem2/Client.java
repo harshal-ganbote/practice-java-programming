@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 class Client {
   public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int num = scn.nextInt();
+    try (Scanner scn = new Scanner(System.in)) {
+      int num = scn.nextInt();
 
-    for (int number =1; number <= num; number++) {
-      Thread tableThread = new ScalerThread(new TableCreator(number));
-      tableThread.start();
+      for (int number = 1; number <= num; number++) {
+        Thread tableThread = new ScalerThread(new TableCreator(number));
+        tableThread.start();
+      }
     }
   }
 }
