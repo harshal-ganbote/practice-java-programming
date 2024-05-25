@@ -2,8 +2,8 @@ package modules.M10_Backend_LLD.L1_OOP_1_Intro_to_LLD_and_OOP.Lecture;
 
 class AnimalMain {
 
-  public static void makeNoise(Animal animal){
-    for(int i=0;i<10;i++){
+  public static void makeNoise(Animal animal) {
+    for (int i = 0; i < 10; i++) {
       animal.speak();
     }
   }
