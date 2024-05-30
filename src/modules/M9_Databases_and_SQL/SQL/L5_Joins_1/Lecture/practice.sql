@@ -45,7 +45,7 @@ FROM students s
   JOIN batches b ON s.batch_id = b.id;
 --
 --
--- Joins are optimised using Index Looks up 
+-- Joins are optimized using Index Looks up 
 -- (if the index is created for that column)
 EXPLAIN ANALYZE
 SELECT s.id,
