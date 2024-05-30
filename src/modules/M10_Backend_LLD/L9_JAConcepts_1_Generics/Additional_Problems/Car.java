@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L9_Java_Advanced_Concepts_1_Generics.Additional_Problems;
+package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Additional_Problems;
 
 class Car implements Comparable<Car> {
   private int speed;

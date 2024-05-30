@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L9_Java_Advanced_Concepts_1_Generics.Assignment;
+package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Assignment;
 
 
 class Point {
