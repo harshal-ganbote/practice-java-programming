@@ -12,7 +12,7 @@ public class StreamDemo {
 
     // What does the following code snippet do?
     Map<Integer, List<String>> groupedByLength = fruits.stream()
-            .collect(Collectors.groupingBy(String::length));
+        .collect(Collectors.groupingBy(String::length));
 
     Set<String> uniqueFruits = new HashSet<>(fruits);
 
