@@ -1,7 +1,7 @@
 package modules.M11_Backend_LLD.L3_Design_Patterns_Introduction_and_Singleton.Assignment.Assignment2;
 
 interface Logger {
-  void log(LogLevel level, String message);
+  void log(java.util.logging.Logger level, String message);
 
   void setLogFile(String filePath);
 
