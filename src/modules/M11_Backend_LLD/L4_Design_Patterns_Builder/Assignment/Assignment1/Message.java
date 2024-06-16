@@ -1,4 +1,4 @@
-package modules.M11_Backend_LLD.L5_Design_Patterns_Builder.Assignment.Builder_Message;
+package modules.M11_Backend_LLD.L4_Design_Patterns_Builder.Assignment.Assignment1;
 
 public class Message {
   private MessageType messageType;
