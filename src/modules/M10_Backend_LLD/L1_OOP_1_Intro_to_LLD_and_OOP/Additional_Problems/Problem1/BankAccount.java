@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L1_OOP_1_Intro_to_LLD_and_OOP.Additional_Problems;
+package modules.M10_Backend_LLD.L1_OOP_1_Intro_to_LLD_and_OOP.Additional_Problems.Problem1;
 
 class BankAccount {
   String accountNumber;
