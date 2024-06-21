@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L3_OOP_3_Inheritance_and_Polymorphism.Additional_Problems;
+package modules.M10_Backend_LLD.L3_OOP_3_Inheritance_and_Polymorphism.Additional_Problems.Problem1;
 
 import java.util.Iterator;
 import java.util.Stack;
@@ -16,9 +16,8 @@ public class Client {
 
   // Write the display method as per requirements of question here
   static void display(Iterable<?> st) {
-    Iterator<?> itr = st.iterator();
-    while (itr.hasNext()) {
-      System.out.println(itr.next());
+    for (Object o : st) {
+      System.out.println(o);
     }
   }
 }
