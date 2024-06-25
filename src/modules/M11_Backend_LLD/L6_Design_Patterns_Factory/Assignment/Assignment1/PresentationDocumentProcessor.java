@@ -1,14 +1,9 @@
 package modules.M11_Backend_LLD.L6_Design_Patterns_Factory.Assignment.Assignment1;
 
 class PresentationDocumentProcessor extends DocumentProcessor {
-  private String documentName;
 
   public PresentationDocumentProcessor(String documentName) {
-    this.documentName = documentName;
-  }
-
-  public String getDocumentName() {
-    return documentName;
+    super(documentName);
   }
 
   @Override
@@ -16,6 +11,7 @@ class PresentationDocumentProcessor extends DocumentProcessor {
     return DocumentType.PRESENTATION;
   }
 
+  @Override
   public void processDocument() {
     // Implement presentation document processing logic
     System.out.println("Processing a presentation document: " + getDocumentName());
