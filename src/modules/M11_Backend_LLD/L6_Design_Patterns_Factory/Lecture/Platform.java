@@ -6,4 +6,8 @@ abstract class Platform {
   void setTheme() {
     System.out.println("setting up theme");
   }
+
+  public static Platform createPlatform(String platformName) {
+    return PlatformFactory.getPlatformByName(platformName);
+  }
 }
