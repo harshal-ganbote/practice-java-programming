@@ -9,13 +9,13 @@ class Game {
 
   Game(List<String> names) {
     this.players = new ArrayList<>();
-    for (String name: names) {
+    for (String name : names) {
       this.players.add(new Player(name));
     }
   }
 
   private boolean checkWinner() {
-    for (Player player: this.players) {
+    for (Player player : this.players) {
       if (player.guess == machineGuess) {
         return true;
       }
@@ -26,22 +26,22 @@ class Game {
 
   void play() {
     // machine guess
-    this.machineGuess = (int)(Math.random() * 9 + 1);
+    this.machineGuess = (int) (Math.random() * 9 + 1);
 
-    //infinite loop, stop whenever there is a winner
+    // infinite loop, stop whenever there is a winner
     while (true) {
       System.out.println("Machine Guess is " + this.machineGuess);
 
-      for (Player player: this.players) {
+      for (Player player : this.players) {
         player.makeGuess();
       }
 
       if (checkWinner()) {
         System.out.println("Game Over");
         System.out.println();
-        return;
+        break;
       } else {
-        this.machineGuess = (int)(Math.random() * 9 + 1);
+        this.machineGuess = (int) (Math.random() * 9 + 1);
       }
     }
   }
