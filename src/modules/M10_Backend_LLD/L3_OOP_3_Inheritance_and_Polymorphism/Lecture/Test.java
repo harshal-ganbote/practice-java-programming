@@ -19,13 +19,13 @@ class Test {
     System.out.println(player.computeScore(10, 8));
     System.out.println(player.computeScore("X", 10));
 
-    Player player1 = new Player();
-    Player player2 = new Player();
-    Player player3 = new Player();
+    // Player player1 = new Player();
+    // Player player2 = new Player();
+    // Player player3 = new Player();
 
     System.out.println("static member is class level data member");
     System.out.println(Player.count);
-    System.out.println(player1.count);
+    System.out.println(Player.count);
 
     System.out.println("Math Library");
     System.out.println(Math.PI);
@@ -42,8 +42,7 @@ class Test {
 
   }
 
-  public static PaymentMethod getPaymentMethod () {
+  public static PaymentMethod getPaymentMethod() {
     return new UPI();
   }
 }
-

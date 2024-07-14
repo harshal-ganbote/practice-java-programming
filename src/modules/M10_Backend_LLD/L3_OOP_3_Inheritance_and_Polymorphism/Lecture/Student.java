@@ -19,9 +19,9 @@ class Student extends User {
   @Override
   public String toString() {
     return "Student{" +
-            "batchName='" + batchName + '\'' +
-            ", name='" + name + '\'' +
-            ", email='" + email + '\'' +
-            '}';
+        "batchName='" + batchName + '\'' +
+        ", name='" + name + '\'' +
+        ", email='" + email + '\'' +
+        '}';
   }
 }
