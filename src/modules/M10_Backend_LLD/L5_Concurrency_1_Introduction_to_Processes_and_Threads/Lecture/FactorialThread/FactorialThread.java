@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L5_Concurrency_1_Introduction_to_Processes_and_Threads.FactorialThread;
+package modules.M10_Backend_LLD.L5_Concurrency_1_Introduction_to_Processes_and_Threads.Lecture.FactorialThread;
 
 import java.math.BigInteger;
 
@@ -17,7 +17,7 @@ public class FactorialThread implements Runnable {
       ans = ans.multiply(BigInteger.valueOf(num));
     }
 
-    return  ans;
+    return ans;
   }
 
   @Override
