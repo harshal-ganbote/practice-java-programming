@@ -24,4 +24,16 @@ public class Move {
   public void setPlayer(Player player) {
     this.player = player;
   }
+
+  public boolean validateMove(Board board) {
+    int row = this.getCell().getRow();
+    int col = this.getCell().getCol();
+    int boardSize = board.getSize();
+
+    if (row < 0 || row > boardSize - 1 || col < 0 || col > boardSize - 1) {
+      return false;
+    }
+
+    return board.getGird().get(row).get(col).getCellState().equals(CellState.EMPTY);
+  }
 }

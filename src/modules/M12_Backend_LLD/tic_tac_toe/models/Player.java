@@ -1,10 +1,13 @@
 package modules.M12_Backend_LLD.tic_tac_toe.models;
 
+import java.util.Scanner;
+
 public abstract class Player {
   private Long id;
   private String name;
   private Symbol symbol;
   private PlayerType playerType;
+  private Scanner scanner = new Scanner(System.in);
 
   public Player(Long id, String name, Symbol symbol) {
     this.id = id;
@@ -44,4 +47,12 @@ public abstract class Player {
     this.playerType = playerType;
   }
 
+  public Move makeMove(Board board) {
+    System.out.println("Please enter the row in which you want top move");
+    int row = scanner.nextInt();
+    System.out.println("Please enter the col in which you want to move");
+    int col = scanner.nextInt();
+
+    return new Move(new Cell(row, col), this);
+  }
 }

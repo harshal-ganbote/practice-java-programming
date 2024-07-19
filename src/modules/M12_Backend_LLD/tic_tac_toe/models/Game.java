@@ -81,6 +81,83 @@ public class Game {
     this.winningStrategies = winningStrategies;
   }
 
+  public void displayBoard() {
+    board.displayBoard();
+  }
+
+  public boolean checkWinner(Move move) {
+
+    for (WinningStrategy winningStrategy : winningStrategies) {
+      if (winningStrategy.checkWinner(board, move)) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  public void undo() {
+
+    if (moves.isEmpty()) {
+      System.out.println("Nothing to Undo! Please make a move first");
+      return;
+    }
+
+    int movesSize = moves.size();
+
+    Move lastMove = moves.get(movesSize - 1);
+    moves.remove(movesSize - 1);
+
+    lastMove.getCell().setCellState(CellState.EMPTY);
+    lastMove.getCell().setSymbol(null);
+
+    nextPlayerIndex--;
+    nextPlayerIndex = (nextPlayerIndex + players.size()) % players.size();
+
+    for (WinningStrategy winningStrategy : winningStrategies) {
+      winningStrategy.handleUndo(board, lastMove);
+    }
+  }
+
+  public void makeMove() {
+    Player currentPlayer = players.get(nextPlayerIndex);
+    int playerSize = players.size();
+
+    System.out.println("It's " + currentPlayer.getName() + "'s turn! please make your move");
+
+    Move move = currentPlayer.makeMove(board);
+
+    if (!move.validateMove(board)) {
+      System.out.println("Invalid Move! Please try again");
+      return;
+    }
+
+    int row = move.getCell().getRow();
+    int col = move.getCell().getCol();
+
+    Cell cellToChange = board.getGird().get(row).get(col);
+    cellToChange.setSymbol(currentPlayer.getSymbol());
+    cellToChange.setCellState(CellState.FILLED);
+
+    move.setCell(cellToChange);
+    moves.add(move);
+
+    nextPlayerIndex++;
+    nextPlayerIndex %= playerSize;
+
+    int movesSize = moves.size();
+    int boardSize = board.getSize();
+    boardSize *= boardSize;
+
+    if (checkWinner(move)) {
+      setWinner(currentPlayer);
+      setGameState(GameState.SUCCESS);
+    } else if (movesSize == boardSize) {
+      setWinner(null);
+      setGameState(GameState.DRAW);
+    }
+  }
+
   public static Builder getBuilder() {
     return new Builder();
   }

@@ -45,4 +45,12 @@ public class Cell {
     this.cellState = cellState;
   }
 
+  public void displayCell() {
+    if (cellState == CellState.EMPTY) {
+      System.out.print("[ - ]");
+    } else {
+      System.out.print("[ " + symbol.getSym() + " ]");
+    }
+  }
+
 }
