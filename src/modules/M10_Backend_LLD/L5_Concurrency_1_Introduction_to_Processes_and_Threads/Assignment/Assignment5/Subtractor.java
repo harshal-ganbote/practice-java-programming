@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L5_Concurrency_1_Introduction_to_Processes_and_Threads.Assignment;
+package modules.M10_Backend_LLD.L5_Concurrency_1_Introduction_to_Processes_and_Threads.Assignment.Assignment5;
 
 class Subtractor implements Runnable {
 
