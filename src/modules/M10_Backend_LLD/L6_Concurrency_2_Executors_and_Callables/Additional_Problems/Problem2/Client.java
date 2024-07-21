@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L6_Concurrency_2_Executors_and_Callables.Additional_Problems;
+package modules.M10_Backend_LLD.L6_Concurrency_2_Executors_and_Callables.Additional_Problems.Problem2;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
