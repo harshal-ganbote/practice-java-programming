@@ -1,4 +1,4 @@
-package modules.M12_Backend_LLD.parking_lot.models;
+package modules.M12_Backend_LLD.ParkingLot.models;
 
 public class Operator extends BaseModel {
   private String name;

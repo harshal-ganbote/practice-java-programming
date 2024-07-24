@@ -1,4 +1,4 @@
-package modules.M12_Backend_LLD.parking_lot.models;
+package modules.M12_Backend_LLD.ParkingLot.models;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package modules.M12_Backend_LLD.parking_lot;
+package modules.M12_Backend_LLD.ParkingLot;
 
 public class Client {
 

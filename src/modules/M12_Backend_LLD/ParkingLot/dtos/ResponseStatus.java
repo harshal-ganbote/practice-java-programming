@@ -1,4 +1,4 @@
-package modules.M12_Backend_LLD.parking_lot.dtos;
+package modules.M12_Backend_LLD.ParkingLot.dtos;
 
 public enum ResponseStatus {
   SUCCESS,
