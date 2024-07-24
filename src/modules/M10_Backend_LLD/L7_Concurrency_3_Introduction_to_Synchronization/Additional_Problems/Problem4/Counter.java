@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L7_Concurrency_3_Introduction_to_Synchronization.Additional_Problems;
+package modules.M10_Backend_LLD.L7_Concurrency_3_Introduction_to_Synchronization.Additional_Problems.Problem4;
 
 class Counter {
   private int count;
