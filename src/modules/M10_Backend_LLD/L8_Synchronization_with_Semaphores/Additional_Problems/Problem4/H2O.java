@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L8_Synchronization_with_Semaphores.Additional_Problems;
+package modules.M10_Backend_LLD.L8_Synchronization_with_Semaphores.Additional_Problems.Problem4;
 
 import java.util.concurrent.Semaphore;
 
@@ -28,5 +28,4 @@ class H2O {
     releaseOxygen.run();
     spHydro.release(2);
   }
-
 }

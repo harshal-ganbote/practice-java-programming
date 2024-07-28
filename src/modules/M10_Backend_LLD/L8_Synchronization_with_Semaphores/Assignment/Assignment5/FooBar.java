@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L8_Synchronization_with_Semaphores.Assignment;
+package modules.M10_Backend_LLD.L8_Synchronization_with_Semaphores.Assignment.Assignment5;
 
 import java.util.concurrent.Semaphore;
 
