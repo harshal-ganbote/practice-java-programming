@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Assignment;
+package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Assignment.Assignment2;
 
 import java.util.Iterator;
 
@@ -41,6 +41,5 @@ class Node implements Iterable<Integer> {
       return temp.data;
     }
   }
-
 
 }

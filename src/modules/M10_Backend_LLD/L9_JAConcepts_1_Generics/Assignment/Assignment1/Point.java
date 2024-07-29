@@ -1,10 +1,8 @@
-package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Assignment;
-
+package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Assignment.Assignment1;
 
 class Point {
   private int x;
   private int y;
-
 
   public Point(int x, int y) {
     this.x = x;

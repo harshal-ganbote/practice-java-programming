@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Additional_Problems;
+package modules.M10_Backend_LLD.L9_JAConcepts_1_Generics.Additional_Problems.Problem2;
 
 import java.util.TreeSet;
 
