@@ -1,4 +1,4 @@
-package modules.M10_Backend_LLD.L10_JAConcepts_3_Streams_and_Lambdas;
+package modules.M10_Backend_LLD.L11_JAConcepts_3_Streams_and_Lambdas;
 
 import java.util.*;
 import java.util.function.BinaryOperator;
