@@ -22,12 +22,12 @@ class Student {
   @Override
   public String toString() {
     return "Student{" +
-            "rollNo=" + rollNo +
-            ", name='" + name + '\'' +
-            ", age=" + age +
-            ", marks=" + marks +
-            ", batch='" + batch + '\'' +
-            '}';
+        "rollNo=" + rollNo +
+        ", name='" + name + '\'' +
+        ", age=" + age +
+        ", marks=" + marks +
+        ", batch='" + batch + '\'' +
+        '}';
   }
 
   static class Builder {

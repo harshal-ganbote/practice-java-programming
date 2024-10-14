@@ -43,18 +43,28 @@ abstract class FileBasedConfigurationManager {
     return properties;
   }
 
+  /**
+   * Converts a string value to a specific type. Supported types are Integer,
+   * Long, Float, and Double.
+   *
+   * @param value the string value to convert
+   * @param type  the target type
+   * @param <T>   the target type
+   * @return the converted value
+   * @throws UnsupportedOperationException if the type is not supported
+   */
   protected <T> T convert(String value, Class<T> type) {
     System.out.println("Converting " + value + " to " + type.getSimpleName());
-    switch (type.getSimpleName()) {
-      case "Integer":
-        return (T) Integer.valueOf(value);
-      case "Long":
-        return (T) Long.valueOf(value);
-      case "Float":
-        return (T) Float.valueOf(value);
-      case "Double":
-        return (T) Double.valueOf(value);
+    if (Integer.class.equals(type)) {
+      return type.cast(Integer.valueOf(value));
+    } else if (Long.class.equals(type)) {
+      return type.cast(Long.valueOf(value));
+    } else if (Float.class.equals(type)) {
+      return type.cast(Float.valueOf(value));
+    } else if (Double.class.equals(type)) {
+      return type.cast(Double.valueOf(value));
+    } else {
+      throw new UnsupportedOperationException("Invalid type: " + type.getSimpleName());
     }
-    throw new UnsupportedOperationException("Invalid type: " + type.getSimpleName());
   }
 }
