@@ -48,7 +48,8 @@ public class BaggersProblem {
     for (int index = 0; index < M; index++) {
 
       int startIndex = B[index][0];
-      ans[startIndex] += B[index][1];
+      int value = B[index][1];
+      ans[startIndex] += value;
 
     }
 

@@ -24,10 +24,13 @@ public class Problem1 {
 
     int sum = 1;
 
-    for (int number = 2; number * number < A; number++) {
+    for (int number = 2; number * number <= A; number++) {
 
       if (A % number == 0) {
-        sum += number + (A / number);
+        sum += number;
+        if (number * number != A) {
+          sum += A / number;
+        }
       }
 
     }
@@ -42,7 +45,7 @@ public class Problem1 {
   public static void main(String[] args) {
 
     System.out.println();
-    System.out.println(solve(4));
+    System.out.println(solve(16));
     System.out.println("---------");
     System.out.println(solve(6));
     System.out.println();
