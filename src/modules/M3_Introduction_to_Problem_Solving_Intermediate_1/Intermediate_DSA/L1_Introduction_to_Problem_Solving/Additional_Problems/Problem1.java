@@ -24,13 +24,11 @@ public class Problem1 {
 
     int sum = 1;
 
-    for (int number = 2; number * number <= A; number++) {
+    for (int number = 2; number * number < A; number++) {
 
       if (A % number == 0) {
         sum += number;
-        if (number * number != A) {
-          sum += A / number;
-        }
+        sum += A / number;
       }
 
     }

@@ -17,9 +17,7 @@ public class Assignment1 {
     int count = 0;
 
     for (int i : A) {
-      if (i >= maxVal) {
-        maxVal = i;
-      }
+      maxVal = Math.max(maxVal, i);
     }
     for (int i : A) {
       if (i != maxVal) {

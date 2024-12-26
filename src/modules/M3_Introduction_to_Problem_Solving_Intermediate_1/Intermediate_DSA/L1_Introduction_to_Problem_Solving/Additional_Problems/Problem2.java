@@ -17,12 +17,11 @@ public class Problem2 {
 
       if (N % number == 0) {
         count += (number * number == N) ? 1 : 2;
-      }
 
-      if (count > 2) {
-        break;
+        if (count > 2) {
+          break;
+        }
       }
-
     }
 
     return count;
